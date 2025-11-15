@@ -1,0 +1,10 @@
+У конструкторі класу є перевірка:
+self.name = name if name is not None else self.anonymous_user().name
+Якщо значення name — це None, то замість нього викликається метод self.anonymous_user(). Цей метод створює новий об'єкт класу MyName, передаючи йому ім'я "Anonymous":
+
+@classmethod
+def anonymous_user(cls):
+    return cls("Anonymous")
+Тому, якщо ми передаємо None, то в результаті створюється об'єкт з ім'ям "Anonymous", оскільки метод anonymous_user() генерує екземпляр класу з таким ім'ям.У конструкторі класу є перевірка:
+self.name = name if name is not None else self.anonymous_user().name
+
