@@ -1,0 +1,15 @@
+h1, h2 {
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+}
+
+.past {
+    color: green;
+}
+.present {
+    color: blue;
+}
+.future {
+    color: red;
+}
