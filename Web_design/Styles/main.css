@@ -13,3 +13,67 @@ h1, h2 {
 .future {
     color: red;
 }
+
+/* --- Стилі для Лабораторної роботи №7 --- */
+
+/* Загальний фон сторінки */
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+/* Для вирівнювання карток по центру */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+/* Блоковий елемент для картки курсу */
+.course-card {
+    display: flex; /* Розміщує 3 елементи в один рядок */
+    flex-direction: column;
+    width: 300px;
+    margin: 20px; /* Відступи між курсами */
+    padding: 15px; /* Внутрішні відступи */
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: left;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+}
+
+/* Стиль для фото з товстою рамкою */
+.course-card img { 
+    width: 260px;
+    height: 180px;
+    padding: 10px;
+    outline: 5px solid rgb(41, 117, 85); 
+    display: block;
+    margin: 0 auto 15px auto;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+/* Стиль для назви (гіперпосилання) */
+.course-card a {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #00ee0c;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+/* Опис курсу */
+.course-card p {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.4;
+    margin: 0;
+    flex-grow: 1;
+}
+/* Лінійний елемент для виділення тексту */
+.highlight {
+    background-color: lightgreen;
+    padding: 2px 4px;
+    font-weight: bold;
+}

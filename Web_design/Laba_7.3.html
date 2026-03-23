@@ -2,105 +2,98 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>OpenMind AI - Курси</title>
+    <title>OpenMind AI - Наші Курси</title>
     <style>
-        /* Загальний стиль сторінки */
+        /* Загальний фон сторінки */
         body {
+            background-color: lightgray;
             font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
             margin: 0;
             padding: 20px;
         }
 
         h1 {
             text-align: center;
-            color: #2c3e50;
-            margin-bottom: 30px;
+            color: #0a216d;
+            margin-bottom: 40px;
         }
 
-        /* Контейнер для центрування карток */
-        .services-container {
-            text-align: center; 
+        /* Для вирівнювання карток по центру */
+        .container {
+            text-align: center;
         }
 
-        /* Блоковий елемент <div> для кожної послуги (картки) */
-        .service-card {
-            display: inline-block; /* Дозволяє розмістити блокові елементи в один рядок */
-            width: 30%; /* Займає 30% ширини екрана (3 в ряд) */
-            min-width: 250px;
-            margin: 10px; /* Відступи між елементами <div> */
-            padding: 20px; /* Внутрішні відступи для тексту і фото */
+        /* Блоковий елемент для картки курсу */
+        .course-card {
+            display: inline-block; /* Розміщує 3 елементи в один рядок */
+            width: 300px;
+            margin: 20px; /* Відступи між курсами */
+            padding: 15px; /* Внутрішні відступи */
             background-color: #ffffff;
-            border: 2px solid #e0e6ed;
-            border-radius: 10px;
+            border-radius: 5px;
             vertical-align: top;
             text-align: left;
-            box-sizing: border-box; /* Щоб padding не збільшував загальну ширину */
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
         }
 
-        /* Стиль для фотографій */
-        .service-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
-            margin-bottom: 15px;
-        }
-
-        /* Стиль для назви-посилання */
-        .service-card a {
+        /* Стиль для фото з товстою жовтою рамкою */
+        .course-card img {
+            width: 260px;
+            height: 180px;
+            padding: 10px;
+            outline: 5px solid rgb(41, 117, 85); 
             display: block;
-            font-size: 1.3em;
+            margin: 0 auto 15px auto;
+            object-fit: cover;
+        }
+
+        /* Стиль для назви (гіперпосилання) */
+        .course-card a {
+            display: block;
+            font-size: 1.2em;
             font-weight: bold;
-            color: #2980b9;
-            text-decoration: none;
+            color: #00ee0c;
+            text-decoration: underline;
             margin-bottom: 10px;
         }
 
-        .service-card a:hover {
-            text-decoration: underline;
-            color: #1a5276;
+        /* Опис курсу */
+        .course-card p {
+            font-size: 15px;
+            color: #333;
+            line-height: 1.4;
         }
 
-        /* Стиль для опису */
-        .service-card p {
-            color: #555;
-            line-height: 1.5;
-            margin: 0;
-        }
-
-        /* Лінійний елемент <span> для виділення важливого тексту */
+        /* Лінійний елемент для виділення тексту */
         .highlight {
-            background-color: #f1c40f;
-            color: #000;
+            background-color: lightgreen; /* Зелений маркер */
+            padding: 2px 4px;
             font-weight: bold;
-            padding: 2px 5px;
-            border-radius: 3px;
         }
     </style>
 </head>
 <body>
 
-    <h1>Освітня платформа OpenMind AI</h1>
+    <h1>"Найкращі курси, які можна придбати за доступною ціною"</h1>
 
-    <div class="services-container">
+    <div class="container">
         
-        <div class="service-card">
-            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=400&q=80" alt="Штучний інтелект">
-            <a href="https://prometheus.org.ua/" target="_blank">Курс "Штучний інтелект"</a>
-            <p>Навчіться створювати та використовувати нейромережі. Цей курс розроблено <span class="highlight">спеціально для підлітків</span> — від азів до перших проєктів.</p>
+        <div class="course-card">
+            <img src="https://turpoisk.ua/images/guide/krakov/krakov.jpg" alt="Польська мова">
+            <a href="https://preply.com/ua/kursy/polska?campaignid=11501296201&network=g&adgroupid=112600190810&adgroupintent=&keyword=курс%20польської&matchtype=e&creative=714529243377&targetid=aud-1227814407584:kwd-332217529092&placement=&loc_physical_ms=9198696&device=c&utm_source=google&utm_medium=cpc&utm_term=курс%20польської&utm_campaign=stu_sem_generic_web_0_ukr_ua_multiplesub_ex&hsa_acc=7765778248&hsa_cam=11501296201&hsa_grp=112600190810&hsa_ad=714529243377&hsa_src=g&hsa_tgt=aud-1227814407584:kwd-332217529092&hsa_kw=курс%20польської&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=11501296201&gclid=CjwKCAjwyYPOBhBxEiwAgpT8P3Ye2TzV2BsdkEMN7Cls6-NiLi0lmoRlyqdMj5KNwu5SLkcOAPN7KBoCMh8QAvD_BwE" target="_blank">Курс з польської мови</a>
+            <p>Вивчай мову для спілкування та підготовки до <span class="highlight">екзамену TELC B2</span>. Програма розрахована на 6 місяців активного навчання.</p>
         </div>
 
-        <div class="service-card">
-            <img src="https://images.unsplash.com/photo-1618424181497-157f25b6ce5e?auto=format&fit=crop&w=400&q=80" alt="3D Blender">
-            <a href="https://www.blender.org/" target="_blank">3D-графіка у Blender</a>
-            <p>Створюйте власні 3D-світи, персонажів та анімації. Опануйте <span class="highlight">найпопулярніший інструмент</span> для сучасної комп'ютерної графіки.</p>
+        <div class="course-card">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300" alt="Штучний інтелект">
+            <a href="www.google.com/aclk?sa=L&ai=DChsSEwjoyNaX0raTAxXiEKIDHfdRIloYACICCAEQABoCbGU&co=1&gclid=CjwKCAjwyYPOBhBxEiwAgpT8P2WY4D1n1Q44NMYvwFgLJgEN8DLFeLUhHD_KL6mMhxu3VL6Jhv5n_BoCGfwQAvD_BwE&cid=CAAS3QHkaOmdlp-zsK4TvBOGnZax21fUuUm5JDZneTyL6KnOh9n8ztze6xF3vPetgU7WwWamNp7unlZIwrP4b6WYMOuHR8DN4V-cmRxK4S90khiLqQIAbNeCKCr8hi-02Zbm4610N76lYy7_Grq3aRMwcYqGq9vHZ20gzBQrm_AqSKNZ9sXQagzTpz4641lGO7QkPORew8cH9X1duBB1LzkZj6cOLnVTbWvYwtzpZQb2wRBFwPQyRT2CC-5ZjN6WWHHtrFYlSS6yUafbKoCG4VJ41jnjwMbxCX0dFWJl0gcPzg&cce=2&sig=AOD64_2_R3dNjdHjnGwqPXQI6Xi-rHoy9A&q&adurl&ved=2ahUKEwiuutCX0raTAxVLPhAIHRqJJxwQ0Qx6BAgmEAE&nis=7&ch=1" target="_blank">Курс з вивчення штучного інтелекту</a>
+            <p>Дізнайся, як працюють нейромережі та як їх використовувати в навчанні. Це <span class="highlight">майбутнє технологій</span>, доступне вже сьогодні.</p>
         </div>
 
-        <div class="service-card">
-            <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=400&q=80" alt="Комп'ютерне залізо">
-            <a href="https://hard.rozetka.com.ua/" target="_blank">Курс "Комп'ютерне залізо"</a>
-            <p>Дізнайтеся, як влаштований ПК, навчіться його самостійно збирати та апгрейдити. Отримайте <span class="highlight">практичні навички</span> на все життя.</p>
+        <div class="course-card">
+            <img src="https://coworkingclub.com.ua/wp-content/uploads/2024/01/yazyki-programirovaniya.webp" alt="Розробка сайту">
+            <a href="https://www.w3schools.com/" target="_blank">Курс з розробки сайту</a>
+            <p>Навчися створювати власні сторінки за допомогою <span class="highlight">HTML та CSS</span>. Створи свій перший проєкт з нуля за кілька тижнів.</p>
         </div>
 
     </div>
