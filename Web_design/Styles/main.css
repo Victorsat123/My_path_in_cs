@@ -77,3 +77,126 @@ body {
     padding: 2px 4px;
     font-weight: bold;
 }
+
+
+
+
+
+
+
+
+/* --- Стилі для Лабораторної роботи №8 --- */
+
+/* Підключення Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1920');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif; /* Другий шрифт */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Заголовок з ефектом тіні */
+h1 {
+    font-family: 'Montserrat', sans-serif; /* Перший шрифт */
+    text-align: center;
+    color: #ffffff;
+    font-size: 3em;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); /* Тінь тексту */
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+/* Box Model для оголошень */
+.course-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Нейтральний фон */
+    width: 300px;
+    padding: 20px;              /* Padding */
+    margin: 10px;               /* Margin */
+    border: 7px solid #0a216d;  /* Рамка не менше 5px */
+    outline: 4px solid #00ee0c; /* Outline */
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+}
+
+.course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Стилізація таблиці */
+table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #0a216d;
+    color: white;
+}
+
+/* Чергування кольору рядків */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* СТИЛІЗАЦІЯ ПОСИЛАНЬ (Псевдокласи) */
+/* 1. Звичайне, невідвідуване посилання */
+.table-link:link {
+    color: black;
+    font-style: italic;
+    text-decoration: none;
+}
+
+/* 2. Відвідуване посилання */
+.table-link:visited {
+    color: purple;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* 3. При наведенні курсору */
+.table-link:hover {
+    color: black;
+    font-style: italic;
+    background-color: #ffff00; /* Жовтий фон на вибір */
+}
+
+/* 4. В момент натискання */
+.table-link:active {
+    color: blue;
+    font-style: italic;
+    text-decoration: underline;
+    background-color: #00ee0c; /* Зелений фон на вибір */
+}
+
+.badge {
+    background-color: #ffeb3b; /* Виділення тексту іншим фоном */
+    padding: 2px 5px;
+    font-weight: bold;
+}
