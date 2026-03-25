@@ -1,0 +1,85 @@
+/* Повне відновлення дизайну зі світлим фоном */
+body {
+    background-color: #f9f9f9; /* Світлий фон як на image_b782ef.jpg */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #0a216d; /* Темно-синій заголовок */
+    font-size: 2.2em;
+    margin-bottom: 50px;
+}
+
+/* Контейнер для розміщення карток по 3 в ряд */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Біла картка з тінню */
+.course-card {
+    background-color: #ffffff;
+    width: 30%; /* Рівно 3 в ряд */
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08); /* М'яка тінь */
+    text-align: left;
+    box-sizing: border-box;
+}
+
+/* Зображення без неонових рамок */
+.course-card img {
+    width: 100%;
+    height: 160px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+/* Сині заголовки курсів */
+.course-card a {
+    display: block;
+    font-size: 1.15em;
+    font-weight: bold;
+    color: #0a216d;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+/* Опис курсу */
+.course-card p {
+    font-size: 13.5px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Списки бонусів */
+.items-list {
+    margin: 0;
+    padding: 0 0 0 18px;
+    font-size: 12px;
+    color: #666;
+}
+
+.items-list li {
+    margin-bottom: 4px;
+}
+
+/* Зелене виділення */
+.highlight {
+    background-color: #c1f0c1; /* Ніжно-зелений */
+    padding: 2px 4px;
+    font-weight: bold;
+    border-radius: 3px;
+    color: #1e5a1e;
+}

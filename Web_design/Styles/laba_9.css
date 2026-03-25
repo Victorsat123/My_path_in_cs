@@ -1,0 +1,23 @@
+/* І. Робота із фоновими зображеннями */
+
+/* 1. Стилі до елемента div */
+.background-example {
+    width: 500px;
+    height: 300px;
+    background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500');
+    /* Обрано оптимальне значення contain (відмінне від cover) */
+    background-size: contain;
+    background-position: center;
+    border: 2px solid #333;
+    margin: 50px auto;      /* Центрування блоку на сторінці */
+}
+
+/* 2. Градієнт як фон сторінки */
+.background-gradient {
+background: #44c1f2;
+background: linear-gradient(90deg,rgba(68, 193, 242, 1) 6%, rgba(71, 194, 224, 1) 13%, rgba(161, 242, 22, 1) 42%, rgba(87, 199, 133, 1) 51%, rgba(230, 200, 5, 1) 84%);
+    
+    /* Додаткові стилі для коректного відображення на весь екран */
+    min-height: 100vh;
+    margin: 0;
+}

@@ -2,110 +2,8 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>OpenMind AI - Professional Courses</title>
-    
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
-
-    <style>
-        /* 1. Фонове зображення для всієї сторінки */
-        body {
-            background-image: url('https://images.unsplash.com/photo-1510074377623-8cf13fb86c08?q=80&w=1920');
-            background-size: cover;
-            background-attachment: fixed;
-            font-family: 'Open Sans', sans-serif; /* Шрифт №1 */
-            margin: 0;
-            padding: 40px 20px;
-        }
-
-        /* 2. Заголовок з ефектом тіні */
-        h1 {
-            text-align: center;
-            font-family: 'Montserrat', sans-serif; /* Шрифт №2 */
-            color: #ffffff;
-            font-size: 3em;
-            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Ефект тіні для тексту */
-            margin-bottom: 50px;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-
-        /* 3. Принцип Box Model: border, padding, margin, outline */
-        .course-card {
-            background-color: rgba(255, 255, 255, 0.95); /* Нейтральний фон блоку */
-            width: 320px;
-            padding: 25px;               /* Внутрішні відступи (не нульові) */
-            margin: 15px;                /* Зовнішні відступи (не нульові) */
-            border: 6px solid #0a216d;   /* Рамка не менше 5px */
-            outline: 3px solid #00ee0c;  /* Outline (не нульовий) */
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-            display: flex;
-            flex-direction: column;
-            transition: transform 0.3s;
-        }
-
-        .course-card:hover {
-            transform: translateY(-10px); /* Псевдоклас для інтерактивності */
-        }
-
-        .course-card img {
-            width: 100%;
-            height: 180px;
-            border-radius: 8px;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-
-        /* 4. Назва з іконкою та тінню */
-        .course-card h3 {
-            font-family: 'Montserrat', sans-serif;
-            color: #0a216d;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-            margin: 10px 0;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .course-card a {
-            color: #0a216d;
-            text-decoration: none;
-        }
-
-        .course-card a:hover {
-            color: #00ee0c;
-        }
-
-        .course-card p {
-            font-size: 14px;
-            line-height: 1.6;
-            color: #444;
-            flex-grow: 1;
-        }
-
-        /* 5. Виділення важливих частин іншим фоном */
-        .badge {
-            background-color: #0a216d;
-            color: white;
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-weight: bold;
-            font-size: 0.8em;
-        }
-
-        /* Стилізація іконок */
-        i {
-            color: #00ee0c;
-        }
-    </style>
+    <title>MindRise - Professional Courses</title>
+    <link rel="stylesheet" href="Styles/laba_8.css">
 </head>
 <body>
 
@@ -114,21 +12,27 @@
     <div class="container">
         
         <div class="course-card">
-            <img src="https://turpoisk.ua/images/guide/krakov/krakov.jpg" alt="Польська">
-            <h3><i class="fas fa-language"></i> <a href="#">Польська мова</a></h3>
-            <p>Підготовка до <span class="badge">TELC B2</span> та вільне спілкування. Навчіться говорити всього за 6 місяців.</p>
+            <img src="https://fsp.kpi.ua/wp-content/uploads/2015/09/XwMR8rLgopE.jpg" alt="Polish">
+            <a href="https://preply.com/ua/kursy/polska" target="_blank" rel="noopener noreferrer">Курс польської мови</a>
+            <p>Підготовка до іспиту <span class="badge">TELC B2</span> та вільне спілкування. Отримайте сертифікат для навчання в Польщі.</p>
         </div>
 
         <div class="course-card">
-            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400" alt="ШІ">
-            <h3><i class="fas fa-robot"></i> <a href="#">Штучний інтелект</a></h3>
-            <p>Опануйте <span class="badge">нейромережі</span> та алгоритми майбутнього. Практичні заняття на реальних кейсах.</p>
+            <img src="https://st5.depositphotos.com/15639662/69002/i/450/depositphotos_690029284-stock-photo-word-english-book-united-kingdom.jpg" alt="English"> 
+            <a href="https://www.britishcouncil.org.ua/" target="_blank" rel="noopener noreferrer">Курс англійської мови</a>
+            <p>Вивчення мови від азів до профі. Спілкуйтеся з <span class="badge">носіями мови</span> та готуйтеся до IELTS.</p>
         </div>
 
         <div class="course-card">
-            <img src="https://coworkingclub.com.ua/wp-content/uploads/2024/01/yazyki-programirovaniya.webp" alt="Веб">
-            <h3><i class="fas fa-code"></i> <a href="#">Web-розробка</a></h3>
-            <p>Створюйте сучасні сайти на <span class="badge">HTML5 & CSS3</span>. Від першого тегу до професійного портфоліо.</p>
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=180" alt="AI">
+            <a href="https://ai-vitryna-lp-ua.goit.global/?utm_source=google&utm_medium=cpc&utm_campaign=AY--UA--AI_Showcase--General--ai_courses_kwds_ua&utm_content=обучение%20по%20ai&utm_term=782782440224&gad_source=1&gad_campaignid=23236384789&gclid=CjwKCAjwyYPOBhBxEiwAgpT8P0FaTfLPwZxTUJrg_4ejrmMafXwAi7tMldGyHdr4rXVacvjLtHnzsxoCs_wQAvD_BwE" target="_blank" rel="noopener noreferrer">Курс штучного інтелекту</a>
+            <p>Опануйте <span class="badge">нейромережі</span> на практиці. Навчіться автоматизувати завдання та будувати майбутнє.</p>
+        </div>
+
+        <div class="course-card">
+            <img src="https://coworkingclub.com.ua/wp-content/uploads/2024/01/yazyki-programirovaniya.webp" alt="Web">
+            <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">Курс розробки сайтів</a>
+            <p>Створюйте сучасні сайти за допомогою <span class="badge">HTML5 & CSS3</span>. Реалізуйте свої ідеї в реальних проєктах.</p>
         </div>
 
     </div>

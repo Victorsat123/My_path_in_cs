@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №9 - Обрізання зображень</title>
+    <style>
+        /* --- Твої попередні стилі для фону (Завдання I) --- */
+        .background-gradient {
+            background-image: url('https://turpoisk.ua/images/guide/krakov/krakov.jpg');
+            background-position: right top;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: 300px auto;
+            background-color: #f4f4f4;
+            min-height: 100vh;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .background-example {
+            width: 500px;
+            height: 300px;
+            background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 3px solid #0a216d;
+            background-color: #ffffff;
+            margin: 0 auto 50px auto;
+        }
+
+        /* --- ІІ. ОБРІЗАННЯ ЗОБРАЖЕНЬ ЗА ДОПОМОГОЮ clip-path --- */
+
+        /* 1. Обрізання колом */
+       .clip-example {
+            width: 300px;
+            height: 300px;
+            height: auto;
+            clip-path: circle(50%);
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* 2. Обрізання складною фігурою (Polygon) */
+        .clip-custom {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            clip-path: polygon(12% 0, 2% 31%, 28% 53%, 0 87%, 20% 100%, 51% 55%, 81% 100%, 100% 84%, 76% 53%, 100% 31%, 90% 0, 53% 23%);
+            margin: 20px auto;
+            display: block;
+        }
+
+
+        .section-title {
+            text-align: center;
+            color: #0a216d;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body class="background-gradient">
+
+    <h1 style="text-align: center;">Експерименти з CSS: Background & Clip-path</h1>
+
+    <div class="background-example"></div>
+
+    <hr>
+
+    <h2 class="section-title"> Обрізання зображень за допомогою clip-path</h2>
+
+    <h3 style="text-align: center;">1. Обрізання у формі чашешка</h3>
+    <img src="https://cdn.cases.media/image/wide/2516872e-57d2-459f-9d1f-96911fb8666e.jpg" class="clip-example" alt="Circle Clip">
+
+    <h3 style="text-align: center;">2. Обрізання багатокутником (polygon)</h3>
+    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400" class="clip-custom" alt="Polygon Clip">
+
+    <div style="height: 400px;"></div>
+
+</body>
+</html>
