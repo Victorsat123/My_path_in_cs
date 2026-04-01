@@ -1,6 +1,6 @@
 /* Повне відновлення дизайну зі світлим фоном */
 body {
-    background-color: #f9f9f9; /* Світлий фон як на image_b782ef.jpg */
+    background-color: #f9f9f9; 
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
@@ -8,7 +8,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #0a216d; /* Темно-синій заголовок */
+    color: #48b16b; 
     font-size: 2.2em;
     margin-bottom: 50px;
 }
@@ -26,11 +26,11 @@ h1 {
 /* Біла картка з тінню */
 .course-card {
     background-color: #ffffff;
-    width: 30%; /* Рівно 3 в ряд */
+    width: 30%; 
     min-width: 300px;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08); /* М'яка тінь */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08); 
     text-align: left;
     box-sizing: border-box;
 }
@@ -63,11 +63,11 @@ h1 {
     margin-bottom: 15px;
 }
 
-/* Списки бонусів */
+/* Списки підпунктів */
 .items-list {
     margin: 0;
-    padding: 0 0 0 18px;
-    font-size: 12px;
+    padding: 0 0 0 18px; 
+    font-size: 14px;
     color: #666;
 }
 
@@ -75,9 +75,9 @@ h1 {
     margin-bottom: 4px;
 }
 
-/* Зелене виділення */
+/* Зелене виділення конкретних рядків */
 .highlight {
-    background-color: #c1f0c1; /* Ніжно-зелений */
+    background-color: #c1f0c1;
     padding: 2px 4px;
     font-weight: bold;
     border-radius: 3px;

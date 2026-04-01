@@ -87,8 +87,6 @@ th {
 tr:nth-child(even) { background-color: #f2f2f2; }
 tr:nth-child(odd) { background-color: #ffffff; }
 
-/* --- ЗАВДАННЯ №3: СТИЛІЗАЦІЯ ПОСИЛАНЬ У ТАБЛИЦІ --- */
-
 /* 1. Звичайне, невідвідуване посилання: чорний шрифт курсивом */
 .table-link:link {
     color: black !important;
@@ -103,11 +101,11 @@ tr:nth-child(odd) { background-color: #ffffff; }
     text-decoration: underline;
 }
 
-/* 3. При наведенні: чорний шрифт курсивом із кольоровим фоном (жовтий) */
+/* 3. При наведенні: чорний шрифт курсивом із кольоровим фоном (блакитний) */
 .table-link:hover {
     color: black !important;
     font-style: italic;
-    background-color: yellow;
+    background-color: rgb(6, 226, 255);
     text-decoration: none;
 }
 
