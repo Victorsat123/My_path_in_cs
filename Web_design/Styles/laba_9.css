@@ -1,23 +1,109 @@
-/* І. Робота із фоновими зображеннями */
-
-/* 1. Стилі до елемента div */
+/* 1. Стилі до елемента div  */
 .background-example {
     width: 500px;
     height: 300px;
     background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500');
-    /* Обрано оптимальне значення contain (відмінне від cover) */
     background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     border: 2px solid #333;
-    margin: 50px auto;      /* Центрування блоку на сторінці */
+    background-color: #ffffff;
+    margin: 50px auto; /* Центрування блоку на сторінці */
 }
 
-/* 2. Градієнт як фон сторінки */
+/* 2. Градієнт як фон сторінки + Картинка в кутку */
 .background-gradient {
-background: #44c1f2;
-background: linear-gradient(90deg,rgba(68, 193, 242, 1) 6%, rgba(71, 194, 224, 1) 13%, rgba(161, 242, 22, 1) 42%, rgba(87, 199, 133, 1) 51%, rgba(230, 200, 5, 1) 84%);
+    background-image: 
+        url('https://turpoisk.ua/images/guide/krakov/krakov.jpg'), 
+        linear-gradient(90deg, rgba(68, 193, 242, 1) 6%, rgba(71, 194, 224, 1) 13%, rgba(161, 242, 22, 1) 42%, rgba(87, 199, 133, 1) 51%, rgba(200, 200, 200, 1) 100%);
     
-    /* Додаткові стилі для коректного відображення на весь екран */
+    background-position: right top, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 300px auto, cover;
+    background-attachment: scroll, fixed;
     min-height: 100vh;
     margin: 0;
+    padding: 40px;
+}
+/* --- II. ОБРІЗАННЯ CLIP-PATH --- */
+.clip-example { 
+    width: 300px; 
+    height: 300px; 
+    clip-path: circle(50%); 
+    display: block; 
+    margin: 20px auto; 
+    object-fit: cover; 
+}
+
+.clip-custom {
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover;
+    clip-path: polygon(12% 0, 2% 31%, 28% 53%, 0 87%, 20% 100%, 51% 55%, 81% 100%, 100% 84%, 76% 53%, 100% 31%, 90% 0, 53% 23%);
+    margin: 20px auto; 
+    display: block;
+}
+
+/* --- III. МАСКУВАННЯ --- */
+
+/* 1. Маскування картинки яблуком */
+.masked {
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover; 
+    display: block; 
+    margin: 20px auto;
+    -webkit-mask-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg');
+    mask-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg');
+    -webkit-mask-repeat: no-repeat; 
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain; 
+    mask-size: contain;
+    -webkit-mask-position: center; 
+    mask-position: center;
+}
+
+/* 2. Маскування фрази зображенням */
+.text-mask {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    background-image: url('https://coworkingclub.com.ua/wp-content/uploads/2024/01/yazyki-programirovaniya.webp');
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 50px auto;
+}
+
+/* --- IV. АНІМАЦІЯ --- */
+@keyframes move {
+    from {
+        transform: translateX(0);
+        background-color: red; /* Початковий колір */
+    }
+    to {
+        transform: translateX(300px); /* Зміна розташування */
+        background-color: blue; /* Зміна кольору */
+    }
+}
+
+.animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 50px auto; /* Вирівняв по центру для краси */
+    /* СКОРОЧЕНИЙ ЗАПИС: ім'я, тривалість, повтор, напрямок, затримка */
+    animation: move 3s infinite alternate 2s;
+}
+
+.section-title { 
+    text-align: center; 
+    color: #0a216d; 
+    margin-top: 40px; 
+    font-family: sans-serif; 
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8); /* Трохи тіні, щоб текст читався на градієнті */
 }

@@ -3,86 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Лабораторна робота №9 - Фінал</title>
-    <style>
-        /* --- I. РОБОТА З ФОНОМ --- */
-        .background-gradient {
-            background-image: url('https://turpoisk.ua/images/guide/krakov/krakov.jpg');
-            background-position: right top;
-            background-repeat: no-repeat;
-            background-attachment: scroll;
-            background-size: 300px auto;
-            background-color: #f4f4f4;
-            min-height: 100vh;
-            margin: 0;
-            padding: 40px;
-        }
-
-        .background-example {
-            width: 500px; height: 300px;
-            background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500');
-            background-size: contain; background-position: center; background-repeat: no-repeat;
-            border: 3px solid #0a216d; background-color: #ffffff; margin: 0 auto 50px auto;
-        }
-
-        /* --- II. ОБРІЗАННЯ CLIP-PATH --- */
-        .clip-example { width: 300px; height: 300px; clip-path: circle(50%); display: block; margin: 20px auto; object-fit: cover; }
-
-        .clip-custom {
-            width: 300px; height: 300px; object-fit: cover;
-            clip-path: polygon(12% 0, 2% 31%, 28% 53%, 0 87%, 20% 100%, 51% 55%, 81% 100%, 100% 84%, 76% 53%, 100% 31%, 90% 0, 53% 23%);
-            margin: 20px auto; display: block;
-        }
-        
-        /* 1. Маскування картинки яблуком */
-        .masked {
-            width: 300px; height: 300px; object-fit: cover; display: block; margin: 20px auto;
-            -webkit-mask-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/100px-Apple_logo_black.svg.png');
-            mask-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/100px-Apple_logo_black.svg.png');
-            -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
-            -webkit-mask-size: contain; mask-size: contain;
-            -webkit-mask-position: center; mask-position: center;
-        }
-
-        /* 2. Маскування фрази зображенням */
-        .text-mask {
-            font-size: 40px;
-            font-weight: 800;
-            text-align: center;
-            text-transform: uppercase;
-            font-family: sans-serif;
-            background-image: url('https://coworkingclub.com.ua/wp-content/uploads/2024/01/yazyki-programirovaniya.webp');
-            background-size: cover;
-            background-position: center;
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            margin: 50px auto;
-        }
-
-          @keyframes move {
-            from {
-                transform: translateX(0);
-                background-color: red; /* Початковий колір */
-            }
-            to {
-                transform: translateX(300px); /* Зміна розташування */
-                background-color: blue; /* Зміна кольору */
-            }
-        }
-
-        .animated-box {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            margin: 50px 0;
-            /* СКОРОЧЕНИЙ ЗАПИС (Shorthand):
-               ім'я(move), тривалість(3s), повтор(infinite), напрямок(alternate), затримка(2s) */
-            animation: move 3s infinite alternate 2s;
-        }
-
-
-        .section-title { text-align: center; color: #0a216d; margin-top: 40px; font-family: sans-serif; }
-    </style>
+    <link rel="stylesheet" href="Styles/laba_9.css">
 </head>
 <body class="background-gradient">
 
@@ -93,15 +14,15 @@
     <hr>
 
     <h2 class="section-title">II. Обрізання за допомогою clip-path</h2>
-    <img src="https://cdn.cases.media/image/wide/2516872e-57d2-459f-9d1f-96911fb8666e.jpg" class="clip-example">
-    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400" class="clip-custom">
+    <img src="https://cdn.cases.media/image/wide/2516872e-57d2-459f-9d1f-96911fb8666e.jpg" class="clip-example" alt="Чашечка">
+    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400" class="clip-custom" alt="Полігон">
 
     <hr>
 
     <h2 class="section-title">III. Маскування зображень</h2>
 
     <h3 style="text-align: center;">Маскування формою Apple:</h3>
-    <img src="https://panpolski.com.ua/wp-content/uploads/2017/02/kursy-polskoyi-movy.jpg" class="masked">
+    <img src="https://static.wikia.nocookie.net/pogod/images/3/3a/%D0%9F%D1%80%D0%B8%D1%80%D0%BE%D0%B4%D0%B0.jpg/revision/latest?cb=20181224151953&path-prefix=ru" class="masked" alt="Apple Mask">
 
     <h3 style="text-align: center;">Маскування фрази зображенням:</h3>
     <div class="text-mask">Każdy musi uczyć polski</div>
