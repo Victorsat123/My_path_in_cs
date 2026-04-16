@@ -2,91 +2,68 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Моє Резюме - Лабораторна робота №5</title>
-    <style>
-        /* 1. Фоновий колір, відмінний від білого (дуже світлий сірий) */
-        body {
-            background-color: #f4f6f7; 
-            font-family: Arial, sans-serif; 
-            font-size: 16px; 
-            color: #000;
-            margin: 20px 40px; /* Звичайні відступи */
-        }
-
-        /* 2. Кольори заголовків, різні для кожного рівня */
-        h1 {
-            color: #235e8f; 
-            font-family: 'Times New Roman', serif; 
-            font-size: 32px; 
-        }
-
-        h2 {
-            color: #0faf52; 
-            font-family: 'Times New Roman', serif; 
-            font-size: 22px; 
-            border-bottom: 1px solid #000;
-            padding-bottom: 5px;
-        }
-
-        /* 3. Виділення блоку текстової інформації фоновим кольором */
-        .highlight-text {
-            background-color: #ffffcc; 
-            padding: 10px;
-        }
-
-        /* 4. Центрування зображень та розмежування відступами */
-        .center-imgs {
-            text-align: center;
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
-
-        .center-imgs img {
-            margin: 0 15px; /* Розмежування картинок в одному рядку */
-            vertical-align: middle;
-        }
-    </style>
+    <title>Лабораторна робота №10 - Резюме</title>
+    <link rel="stylesheet" href="Styles/laba_10.css">
 </head>
 <body>
 
-    <h1>Сатановський Віктор</h1>
-    
-    <div class="center-imgs">
-        <img src="my-photo.jpg" height="200" width="150" alt="Моє фото" title="Це я">
-    </div>
+    <header>
+        <h1>Моє Резюме (Лабораторна №10)</h1>
+    </header>
 
-    <h2>Особисті дані</h2>
-    <ul> 
-        <li>Рік народження: 2008 </li>
-        <li>Стать: чоловіча</li>
-        <li>Місто: Львів</li>
-        <li>Адреса: вул. Наукова, буд. 5</li>
-    </ul>
+    <nav class="topnav">
+        <a href="#">Досвід роботи</a>
+        <a href="#">Освіта</a>
+        <a href="#">Навички</a>
+        <a href="#" style="float:right">Мої контакти</a>
+    </nav>
 
-    <h2>Освіта</h2>
-    <ol>
-        <li>
-            <a href="https://lpnu.ua/" target="_blank">Національний університет «Львівська політехніка»</a> 
-            (<a href="https://maps.app.goo.gl/Do3PE98dcQDBUXpr6" target="_blank">на карті</a>)
-        </li>
-        <li>
-            <a href="https://itcollege.lviv.ua/" target="_blank">ВСП «Фаховий коледж інфомаційних технологій НУ ЛП»</a>
-        </li>
-        <li>
-            <a href="https://lnu.edu.ua" target="_blank">Львівський національний університет імені Івана Франка»</a>
-        </li>
-    </ol>
+    <main>
+        
+        <div class="leftcolumn">
+            
+            <article class="card">
+                <h2>ДОСВІД РОБОТИ</h2>
+                <h5>Front-End Developer, 2023</h5>
+                <div class="fakeimg" style="height:200px;">[Тут може бути приклад твоєї роботи або логотип компанії]</div>
+                <p><strong>Опис:</strong></p>
+                <p>Сюди встав текст про свій досвід роботи зі своєї Лабораторної роботи №6. Розпиши свої обов'язки та досягнення.</p>
+            </article>
 
-    <h2>Захоплення та робота</h2>
-    <div class="highlight-text">
-        Моїми захопленнями в житті на даний момент є вивчення різних <a href="https://uk.wikipedia.org/wiki/Мова" target="_blank">мов</a>, щоб можна було вільно спілкуватися з іншими людьми. Такою мовою зараз є <a href="https://uk.wikipedia.org/wiki/Польська_мова" target="_blank">польська</a> вивчаю її вже майже 6 місяців і скоро буду здавати екзамен телц б2. Іншим моїм захопленням є вивчення такої програми, як <a href="https://uk.wikipedia.org/wiki/Blender" target="_blank">Blender</a> де можна робити багато чого, і програмування.
-    </div>
+            <article class="card">
+                <h2>ОСВІТА ТА НАВИЧКИ</h2>
+                <h5>Університет / Курси</h5>
+                <div class="fakeimg" style="height:200px;">[Зображення сертифікату або логотип ВНЗ]</div>
+                <p><strong>Навички:</strong> HTML, CSS, JavaScript, робота з макетами.</p>
+                <p>Сюди встав інформацію про свою освіту та додаткові компетенції з Лаби №6.</p>
+            </article>
 
-    <div class="center-imgs">
-        <img src="https://yelzkizi.org/wp-content/uploads/2025/03/blender-oscar-winner-flow.png" height="300" width="300" alt="3D модель у Blender" title="Вивчення програми Blender">
-        <img src="https://coworkingclub.com.ua/wp-content/uploads/2024/01/yazyki-programirovaniya.webp" height="300" width="300" alt="Програмування" title="Програмування">
-        <img src="https://turpoisk.ua/images/guide/krakov/krakov.jpg" height="300" width="300" alt="Подорож до Польщі" title="Подорож до Польщі">
-    </div>
-    
+        </div>
+
+        <div class="rightcolumn">
+            
+            <section class="card">
+                <h2>Про мене</h2>
+                <div class="fakeimg" style="height:150px;">[Твоє Фото]</div>
+                <p>Короткий опис себе. Пару речень про твої цілі як розробника.</p>
+            </section>
+
+            <section class="card">
+                <h2>Популярні проекти</h2>
+                <div class="fakeimg" style="height:60px;">Проект 1 (Лаба 8)</div><br>
+                <div class="fakeimg" style="height:60px;">Проект 2 (Лаба 9)</div><br>
+                <div class="fakeimg" style="height:60px;">Проект 3</div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <h2>Контактна інформація</h2>
+        <p>Email: myemail@example.com | Тел: +380 (XX) XXX-XX-XX</p>
+        <p>Мої соцмережі: <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Telegram</a></p>
+    </footer>
+
 </body>
 </html>

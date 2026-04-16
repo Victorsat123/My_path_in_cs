@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота - Flex Галерея</title>
+    <style>
+        /* Стилі для контейнера галереї */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        /* Стилі для окремих блоків фото */
+        .photo {
+            background-color: #ccc;
+            height: 100px;
+            
+            /* Виконання вимоги адаптивності (мінімум 150px, розтягується і стискається) */
+            /* Це скорочений запис: flex-grow: 1; flex-shrink: 1; flex-basis: 150px; */
+            flex: 1 1 150px;
+            
+            /* Вирівнювання тексту по центру для естетики */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 8px; /* Заокруглені кути */
+            
+            /* Плавна анімація для hover-ефекту */
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        /* Виконання вимоги: ефект при наведенні курсора */
+        .photo:hover {
+            background-color: #4CAF50; /* Зміна кольору фону на зелений */
+            color: white; /* Зміна кольору тексту */
+            transform: scale(1.05); /* Масштабування (збільшення на 5%) */
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Додаткова тінь для об'єму */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gallery">
+        <div class="photo">Фото 1</div>
+        <div class="photo">Фото 2</div>
+        <div class="photo">Фото 3</div>
+        <div class="photo">Фото 4</div>
+        <div class="photo">Фото 5</div>
+        <div class="photo">Фото 6</div>
+    </div>
+
+</body>
+</html>

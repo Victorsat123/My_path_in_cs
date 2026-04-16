@@ -1,0 +1,81 @@
+/* Базові налаштування (box-sizing для коректних розмірів колонок) */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Заголовок (header) */
+header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+}
+
+/* --- Навігаційна панель зі скріншота --- */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Контейнер для колонок (очищення float) */
+main {
+    overflow: hidden; /* Допомагає контейнеру розтягуватись під floated елементи */
+}
+
+/* --- Ліва колонка зі скріншота --- */
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+/* --- Права колонка зі скріншота --- */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* --- Ефект картки зі скріншота --- */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Заглушка для фотографій (сірий блок) */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* --- Підвал (footer) зі скріншота --- */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}

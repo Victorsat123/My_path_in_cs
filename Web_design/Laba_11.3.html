@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота - Адаптивні картки</title>
+    <style>
+        /* Загальний контейнер, щоб картки гарно стояли на сторінці */
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            font-family: sans-serif;
+        }
+
+        /* 1. Головні налаштування Flexbox для карток (горизонтальне розміщення) */
+        .card {
+            display: flex;
+            flex-direction: row; /* Картинка зліва, текст справа */
+            align-items: center; /* Вирівнювання по центру по вертикалі */
+            gap: 20px;           /* Відступ між картинкою і текстом */
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Легка тінь */
+        }
+
+        /* Обмежуємо розмір картинок, щоб вони не розтягували блок */
+        .card img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* --- СТИЛІ ДЛЯ ПЕРШОЇ КАРТКИ --- */
+        .card-1 {
+            background-color: #f0f8ff; /* Світло-синій фон */
+            border: 2px solid #87cefa;
+            color: #333;
+        }
+        .card-1 h2 { color: #0056b3; margin-top: 0; }
+
+        /* --- СТИЛІ ДЛЯ ДРУГОЇ КАРТКИ --- */
+        .card-2 {
+            background-color: #fffacd; /* Світло-жовтий фон */
+            border: 2px solid #ffd700;
+            color: #444;
+        }
+        .card-2 h2 { color: #b8860b; margin-top: 0; }
+
+        /* 2. АДАПТИВНІСТЬ (Медіа-запит із завдання) */
+        @media (max-width: 600px) {
+            .card {
+                flex-direction: column; /* Елементи стають вертикально */
+                align-items: center;    /* По центру */
+                text-align: center;     /* Текст по центру */
+            }
+            
+            .card img {
+                width: 100%; /* Картинка на всю доступну ширину мобільного екрана */
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="card card-1">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400" alt="Смарт-годинник">
+            <div class="card-content">
+                <h2>Смарт-годинник X-Pro</h2>
+                <p>Сучасний розумний годинник з функцією відстеження пульсу, крокоміром та захистом від води. Ідеальний вибір для активного спорту.</p>
+            </div>
+        </div>
+
+        <div class="card card-2">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400" alt="Бездротові навушники">
+            <div class="card-content">
+                <h2>Навушники Bass Boost</h2>
+                <p>Бездротові навушники з активним шумозаглушенням. Насолоджуйтесь чистим та потужним звуком до 24 годин без підзарядки.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 2 - CSS Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 90px 200px auto 50px;
+            /* Додано висоту для 1-го, 2-го та 3-го рядків за завданням: */
+            grid-template-rows: 80px 100px 120px;
+            gap: 10px;
+            background-color: #08eedb;
+            padding: 10px;
+        }
+        
+        .grid-container > div {
+            background-color: rgb(255, 241, 241);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div>Ужгород</div>
+        <div>Вінниця</div>
+        <div>Дніпро</div>
+        <div>Львів</div>
+        
+        <div>Тернопіль</div>
+        <div>Хмельницький</div>
+        <div>Харків</div>
+        <div>Київ</div>
+
+        <div>Одеса</div>
+        <div>Запоріжжя</div>
+        <div>Полтава</div>
+        <div>Чернівці</div>
+    </div>
+</body>
+</html>

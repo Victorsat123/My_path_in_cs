@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота - Flex Центрування</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #f4f4f9; 
+        }
+
+        /* 1. Налаштування головного контейнера */
+        .center-container {
+            display: flex;
+            justify-content: center; /* Вирівнювання по горизонталі */
+            align-items: center;     /* Вирівнювання по вертикалі */
+            height: 100vh;           /* Займає 100% висоти вікна */
+        }
+
+        /* 2. Оформлення внутрішнього блоку (.center-box помітний) */
+        .center-box {
+            background-color: #07f0c9; /* Яскравий фон блоку */
+            color: white;              /* Колір тексту */
+            padding: 30px 50px;        /* Внутрішні відступи (зверху/знизу та по боках) */
+            border-radius: 15px;       /* Заокруглення кутів */
+            font-size: 24px;           /* Початковий розмір тексту */
+            font-weight: bold;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: font-size 0.3s ease; 
+        }
+
+        /* 3. Ефект при наведенні миші (текст збільшується) */
+        .center-box:hover {
+            font-size: 36px; /* Збільшений розмір тексту */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="center-container">
+        <div class="center-box">Якийсь текст</div>
+    </div>
+
+</body>
+</html>
