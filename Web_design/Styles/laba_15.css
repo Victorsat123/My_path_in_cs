@@ -1,0 +1,169 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+/* Основний контейнер */
+.sl_ctr {
+    position: relative;
+    width: 100%;
+    max-width: 450px; /* Базова ширина */
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* Контейнер для стрічки зображень */
+.sldr {
+    position: relative;
+    width: 10000px; /* Дуже велика ширина для розміщення в ряд */
+    height: 300px;
+}
+
+.sldr img {
+    float: left;
+    max-width: 100%;
+    width: 450px; /* Має збігатися з шириною sl_ctr */
+    height: auto;
+    display: block;
+}
+
+/* Кнопки Назад/Вперед */
+.prv_b, .nxt_b {
+    position: absolute;
+    top: 135px;
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.5); /* Тимчасовий фон замість картинок */
+    border-radius: 50%;
+    z-index: 10;
+}
+
+/* Якщо у тебе є файли prv.png та nxt.png, розкоментуй рядки нижче */
+.prv_b { 
+    left: 10px; 
+    /* background: url('../images/prv.png') no-repeat; */
+}
+.nxt_b { 
+    right: 10px; 
+    /* background: url('../images/nxt.png') no-repeat; */
+}
+
+.prv_b:hover, .nxt_b:hover {
+    opacity: 0.6;
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Стилізація заголовків та тексту на слайдах */
+.carousel-caption {
+    text-shadow: 0px 0px 8px rgba(0,0,0,1);
+    color: #ffffff;
+    bottom: 20%; /* Піднімаємо текст трохи вище */
+}
+
+.carousel-caption h3 {
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Налаштування розміру зображень */
+.carousel-inner > .item > img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; /* Щоб картинки не деформувалися */
+}
+
+/* Додаткове оформлення контейнера слайдера */
+#myCarousel {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.slider {
+    position: relative;
+    overflow: hidden; /* Ховаємо все, що не входить у вікно */
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.slider-track {
+    display: flex; /* Слайди стають у ряд */
+    transition: transform 0.5s ease; /* Анімація руху */
+}
+
+.slide {
+    min-width: 100%; /* Кожен слайд займає 100% ширини контейнера */
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+/* Стилі кнопок */
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }

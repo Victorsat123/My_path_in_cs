@@ -1,0 +1,184 @@
+/* 11.0 */
+
+
+/* Стилі для контейнера навігації */
+nav {
+    display: flex;
+    background-color: #4fe5f0;
+    padding: 10px;
+    /* Розміщуємо пункти меню рівномірно */
+    justify-content: space-evenly; 
+}
+
+/* Стилі для самих посилань */
+nav a {
+    color: rgb(53, 49, 49);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+/* Ефект при наведенні курсора на посилання */
+nav a:hover {
+    background-color: #555; 
+    color: #ffeb3b; 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 11.1 */
+/* Стилі для контейнера галереї */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Стилі для окремих блоків фото */
+.photo {
+    background-color: #ccc;
+    height: 100px;
+    
+    /* Це скорочений запис: flex-grow: 1; flex-shrink: 1; flex-basis: 150px; */
+    flex: 1 1 150px;
+    
+    /* Вирівнювання тексту по центру для естетики */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 8px; 
+    
+    /* Плавна анімація для hover-ефекту */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Ефект при наведенні курсора */
+.photo:hover {
+    background-color: #2fe635; 
+    color: white; 
+    transform: scale(1.05); /* Масштабування (збільшення на 5%) */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+}
+
+
+
+
+
+
+
+
+
+
+/* 11.2 */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f4f4f9; 
+}
+
+/* 1. Налаштування головного контейнера */
+.center-container {
+    display: flex;
+    justify-content: center; /* Вирівнювання по горизонталі */
+    align-items: center;     /* Вирівнювання по вертикалі */
+    height: 100vh;         
+}
+
+/* 2. Оформлення внутрішнього блоку  */
+.center-box {
+    background-color: #07f0c9; 
+    color: white;             
+    padding: 30px 50px;      
+    border-radius: 15px;      
+    font-size: 24px;           
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: font-size 0.3s ease; 
+}
+
+/* 3. Ефект при наведенні миші (текст збільшується) */
+.center-box:hover {
+    font-size: 36px; 
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* 11.3 */
+/* Загальний контейнер для карток */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+/* 1. Головні налаштування Flexbox для карток (горизонтальне розміщення) */
+.card {
+    display: flex;
+    flex-direction: row; /* Картинка зліва, текст справа */
+    align-items: center; 
+    gap: 20px;           
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Обмеження розміру картинок, щоб вони не розтягували блок */
+.card img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-1 {
+    background-color: #f0f8ff;
+    border: 2px solid #50e3f7;
+    color: #333;
+}
+.card-1 h2 { color: #1e7c8d; margin-top: 0; }
+
+.card-2 {
+    background-color: #f0fff9; 
+    border: 2px solid #09ffa1cb;
+    color: #444;
+}
+.card-2 h2 { color: #5cdd83; margin-top: 0; }
+
+/* 2. АДАПТИВНІСТЬ  */
+@media (max-width: 600px) {
+    .card {
+        flex-direction: column; 
+        align-items: center;    
+        text-align: center;    
+    }
+    
+    .card img {
+        width: 100%; 
+        max-width: 300px;
+    }
+}

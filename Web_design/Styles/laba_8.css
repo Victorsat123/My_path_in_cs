@@ -123,3 +123,22 @@ tr:nth-child(odd) { background-color: #ffffff; }
     padding: 2px 5px;
     border-radius: 3px;
 }
+/* --- СТИЛІ ДЛЯ НОВОЇ КНОПКИ (ЗАВДАННЯ 3) --- */
+.open-form-btn {
+    background-color: #17b7bd;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.open-form-btn:hover {
+    background-color: #129094;
+    transform: scale(1.05);
+}

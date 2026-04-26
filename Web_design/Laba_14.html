@@ -1,0 +1,81 @@
+ <!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №14 - Робота з вікнами</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+    <script>
+        // 1. Просте інформаційне вікно (Alert)
+        function showMessage() {
+            alert("Це спливаюче вікно.");
+        }
+
+        // 2. Відкриття нового вікна (Window.open)
+        function openNewWindow() {
+            window.open("https://www.google.com", "_blank", "width=400,height=300");
+        }
+
+        // 3. Вікно з кнопками OK і Cancel (Confirm)
+        function confirmMessage() {
+            let result = confirm("Ви впевнені?"); // Метод confirm() виводить вікно з двома кнопками
+            if (result) {
+                alert("OK.");
+            } else {
+                alert("Cancel.");
+            }
+        }
+
+        // 4. Вікно із полем для введення тексту (Prompt)
+        function promptMessage() {
+            let name = prompt("Як вас звати?"); // Метод prompt() дозволяє отримати дані
+            if (name !== null && name !== "") { // Перевірка, щоб не виводити порожнє ім'я, якщо натиснули Cancel
+                alert("Вітаю, " + name + "!");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Завдання 1. Робота з вікнами та діалогами</h2>
+        
+        <button onclick="showMessage()">Натисни тут</button>
+        <button onclick="openNewWindow()">Відкрити вікно</button>
+        <button onclick="confirmMessage()">Перевірка</button>
+        <button onclick="promptMessage()">Введіть ім'я</button>
+    </div>
+
+    <div class="container">
+        <h2>Фрейм зі сторінкою коледжу</h2>
+        <iframe src="https://itcollege.lviv.ua" width="100%" height="400" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
+    </div>
+
+</body>
+</html>
