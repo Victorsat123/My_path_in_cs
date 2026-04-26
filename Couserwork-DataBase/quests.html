@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements & Quests - Sound Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/course.css">
+</head>
+<body>
+
+<div class="desktop-frame">
+    <header id="top">
+        <div class="header-left">
+            <div class="brand-logo">
+                <div class="logo-box">
+                    <img src="Pictures/Logo.png" alt="Logo">
+                </div>
+                <a href="my_code.html" class="brand-name" style="text-decoration: none;">Sound Journey</a>
+            </div>
+
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <svg class="search-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" class="search-input" placeholder="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="nav-center">
+            <a href="charts.html">Charts</a>
+            <a href="quests.html" class="active-nav">Achievements & Quests</a>
+            <span>Library</span>
+            <span>Community</span>
+        </div>
+        
+        <div class="premium-pill">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 15l3-9 3 4 3-5 3 5 3-4 3 9z"></path>
+                <line x1="4" y1="19" x2="20" y2="19"></line>
+            </svg>
+            Premium
+        </div>
+    </header>
+
+    <main class="quests-main">
+        <nav class="breadcrumb">
+            <a href="my_code.html">Home</a>
+            <span class="separator">></span>
+            <span class="current">Achievements & Quests</span>
+        </nav>
+
+        <div class="quests-hero">
+            <div class="quests-header-left">
+                <div class="quests-title-row">
+                    <div class="title-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-crimson)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                            <path d="M4 22h16"></path>
+                            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                            <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                        </svg>
+                    </div>
+                    <h1>Achievements & Quests</h1>
+                </div>
+                <p class="quests-subtitle">Track your musical journey, complete challenges, and unlock exclusive<br>badges as you level up.</p>
+            </div>
+            <div class="quests-header-right">
+                <div class="total-xp-card">
+                    <div class="xp-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                    </div>
+                    <div class="xp-info">
+                        <span class="xp-label">Total earned XP</span>
+                        <span class="xp-value">1680</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="quests-stats-grid">
+            <div class="q-stat-card">
+                <div class="q-stat-header">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-crimson)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+                    <span>Unlocked</span>
+                </div>
+                <div class="q-stat-value">6/12</div>
+                <div class="q-stat-subtext">achievements</div>
+            </div>
+            <div class="q-stat-card">
+                <div class="q-stat-header">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-crimson)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    <span>Quests Done</span>
+                </div>
+                <div class="q-stat-value">2</div>
+                <div class="q-stat-subtext">this week</div>
+            </div>
+            <div class="q-stat-card">
+                <div class="q-stat-header">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-crimson)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+                    <span>Streak</span>
+                </div>
+                <div class="q-stat-value">23</div>
+                <div class="q-stat-subtext">days</div>
+            </div>
+            <div class="q-stat-card">
+                <div class="q-stat-header">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-crimson)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    <span>Completion</span>
+                </div>
+                <div class="q-stat-value">50%</div>
+                <div class="q-stat-subtext">overall</div>
+            </div>
+        </div>
+
+        <div class="quests-tabs">
+            <button id="btn-achievements" class="tab-btn active">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                Achievements
+            </button>
+            <button id="btn-quests" class="tab-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                Quests
+            </button>
+        </div>
+
+        <div id="view-achievements">
+            <div class="achievements-filters">
+                <button class="filter-btn active" data-target="all">All <span class="filter-count">12</span></button>
+                <button class="filter-btn" data-target="explorer">Explorer <span class="filter-count">4</span></button>
+                <button class="filter-btn" data-target="mastery">Mastery <span class="filter-count">3</span></button>
+                <button class="filter-btn" data-target="streak">Streak <span class="filter-count">2</span></button>
+                <button class="filter-btn" data-target="collector">Collector <span class="filter-count">2</span></button>
+                <button class="filter-btn" data-target="social">Social <span class="filter-count">1</span></button>
+            </div>
+
+            <div class="rarity-legend">
+                <span class="legend-title">Rarity:</span>
+                <div class="legend-item"><span class="dot common-dot"></span>Common</div>
+                <div class="legend-item"><span class="dot rare-dot"></span><span class="text-rare">Rare</span></div>
+                <div class="legend-item"><span class="dot epic-dot"></span><span class="text-epic">Epic</span></div>
+                <div class="legend-item"><span class="dot legendary-dot"></span><span class="text-legendary">Legendary</span></div>
+            </div>
+
+            <div class="achievements-grid">
+                
+                <div class="achv-card common completed" data-category="explorer">
+                    <div class="achv-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--common-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+                    </div>
+                    <div class="achv-content">
+                        <div class="achv-header">
+                            <h3>First Note</h3>
+                            <div class="achv-badge">Common <span class="check-icon">✓</span></div>
+                        </div>
+                        <p class="achv-desc">Listen to your very first song on Sonic Progress</p>
+                        <div class="achv-footer"><span class="xp-reward">⚡ +50 XP</span><span class="achv-date">3 days ago</span></div>
+                    </div>
+                </div>
+
+                <div class="achv-card rare completed" data-category="explorer">
+                    <div class="achv-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--rare-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    </div>
+                    <div class="achv-content">
+                        <div class="achv-header">
+                            <h3>Genre Explorer</h3>
+                            <div class="achv-badge">Rare <span class="check-icon">✓</span></div>
+                        </div>
+                        <p class="achv-desc">Listen to 5 different music genres</p>
+                        <div class="achv-footer"><span class="xp-reward">⚡ +300 XP</span><span class="achv-date">2 hours ago</span></div>
+                    </div>
+                </div>
+
+                <div class="achv-card epic completed" data-category="mastery">
+                    <div class="achv-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--epic-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"></path></svg>
+                    </div>
+                    <div class="achv-content">
+                        <div class="achv-header">
+                            <h3>Music Master</h3>
+                            <div class="achv-badge">Epic <span class="check-icon">✓</span></div>
+                        </div>
+                        <p class="achv-desc">Listen to 1,000 songs total</p>
+                        <div class="achv-footer"><span class="xp-reward">⚡ +750 XP</span><span class="achv-date">1 day ago</span></div>
+                    </div>
+                </div>
+
+                <div class="achv-card legendary locked" data-category="mastery">
+                    <div class="achv-icon dim">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 17.5L3 6V3h3l11.5 11.5"></path><path d="M13 19l6-6"></path><path d="M16 16l4 4"></path><path d="M19 21l2-2"></path><path d="M6.5 12.5L3 16v3h3l3.5-3.5"></path></svg>
+                    </div>
+                    <div class="achv-content">
+                        <div class="achv-header">
+                            <h3>Sonic Legend</h3>
+                            <div class="achv-badge">Legendary</div>
+                        </div>
+                        <p class="achv-desc">Reach Level 25 and unlock all genre trees</p>
+                        <div class="achv-progress-row"><span>18 / 25</span><span>72%</span></div>
+                        <div class="achv-progress-bar"><div class="fill" style="width: 72%; background-color: var(--legendary-color);"></div></div>
+                        <div class="achv-footer"><span class="xp-reward dim">⚡ +2000 XP</span></div>
+                    </div>
+                </div>
+
+                <div class="achv-card rare completed" data-category="streak">
+                    <div class="achv-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--rare-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+                    </div>
+                    <div class="achv-content">
+                        <div class="achv-header">
+                            <h3>Streak Keeper</h3>
+                            <div class="achv-badge">Rare <span class="check-icon">✓</span></div>
+                        </div>
+                        <p class="achv-desc">Maintain a 7-day listening streak</p>
+                        <div class="achv-footer"><span class="xp-reward">⚡ +400 XP</span><span class="achv-date">4 days ago</span></div>
+                    </div>
+                </div>
+
+                <div class="achv-card epic locked" data-category="streak">
+                    <div class="achv-icon dim">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    </div>
+                    <div class="achv-content">
+                        <div class="achv-header">
+                            <h3>On Fire</h3>
+                            <div class="achv-badge">Epic</div>
+                        </div>
+                        <p class="achv-desc">Achieve a 30-day unbroken listening streak</p>
+                        <div class="achv-progress-row"><span>23 / 30</span><span>77%</span></div>
+                        <div class="achv-progress-bar"><div class="fill" style="width: 77%; background-color: var(--epic-color);"></div></div>
+                        <div class="achv-footer"><span class="xp-reward dim">⚡ +900 XP</span></div>
+                    </div>
+                </div>
+
+                <div class="achv-card rare locked" data-category="collector">
+                    <div class="achv-icon dim">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    </div>
+                    <div class="achv-content">
+                        <div class="achv-header">
+                            <h3>Playlist Architect</h3>
+                            <div class="achv-badge">Rare</div>
+                        </div>
+                        <p class="achv-desc">Create 10 custom playlists</p>
+                        <div class="achv-progress-row"><span>6 / 10</span><span>60%</span></div>
+                        <div class="achv-progress-bar"><div class="fill" style="width: 60%; background-color: var(--rare-color);"></div></div>
+                        <div class="achv-footer"><span class="xp-reward dim">⚡ +350 XP</span></div>
+                    </div>
+                </div>
+
+                <div class="achv-card common completed" data-category="explorer">
+                    <div class="achv-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--common-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    </div>
+                    <div class="achv-content">
+                        <div class="achv-header">
+                            <h3>Night Owl</h3>
+                            <div class="achv-badge">Common <span class="check-icon">✓</span></div>
+                        </div>
+                        <p class="achv-desc">Listen to music after midnight for 5 nights</p>
+                        <div class="achv-footer"><span class="xp-reward">⚡ +100 XP</span><span class="achv-date">1 week ago</span></div>
+                    </div>
+                </div>
+
+                <div class="achv-card epic locked" data-category="explorer">
+                    <div class="achv-icon dim">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                    </div>
+                    <div class="achv-content">
+                        <div class="achv-header">
+                            <h3>Trendsetter</h3>
+                            <div class="achv-badge">Epic</div>
+                        </div>
+                        <p class="achv-desc">Discover 20 songs before they reach Top Charts</p>
+                        <div class="achv-progress-row"><span>8 / 20</span><span>40%</span></div>
+                        <div class="achv-progress-bar"><div class="fill" style="width: 40%; background-color: var(--epic-color);"></div></div>
+                        <div class="achv-footer"><span class="xp-reward dim">⚡ +600 XP</span></div>
+                    </div>
+                </div>
+
+                <div class="achv-card legendary locked" data-category="mastery">
+                    <div class="achv-icon dim">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    </div>
+                    <div class="achv-content">
+                        <div class="achv-header">
+                            <h3>Headphone Hero</h3>
+                            <div class="achv-badge">Legendary</div>
+                        </div>
+                        <p class="achv-desc">Accumulate 100 hours of listening time</p>
+                        <div class="achv-progress-row"><span>67 / 100</span><span>67%</span></div>
+                        <div class="achv-progress-bar"><div class="fill" style="width: 67%; background-color: var(--legendary-color);"></div></div>
+                        <div class="achv-footer"><span class="xp-reward dim">⚡ +1500 XP</span></div>
+                    </div>
+                </div>
+
+                <div class="achv-card common completed" data-category="social">
+                    <div class="achv-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--common-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"></circle><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path></svg>
+                    </div>
+                    <div class="achv-content">
+                        <div class="achv-header">
+                            <h3>Social Butterfly</h3>
+                            <div class="achv-badge">Common <span class="check-icon">✓</span></div>
+                        </div>
+                        <p class="achv-desc">Share 5 songs with friends</p>
+                        <div class="achv-footer"><span class="xp-reward">⚡ +80 XP</span><span class="achv-date">5 days ago</span></div>
+                    </div>
+                </div>
+
+                <div class="achv-card rare locked" data-category="collector">
+                    <div class="achv-icon dim">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    </div>
+                    <div class="achv-content">
+                        <div class="achv-header">
+                            <h3>Collector</h3>
+                            <div class="achv-badge">Rare</div>
+                        </div>
+                        <p class="achv-desc">Save 500 songs to your library</p>
+                        <div class="achv-progress-row"><span>312 / 500</span><span>62%</span></div>
+                        <div class="achv-progress-bar"><div class="fill" style="width: 62%; background-color: var(--rare-color);"></div></div>
+                        <div class="achv-footer"><span class="xp-reward dim">⚡ +450 XP</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="view-quests" style="display: none;">
+            
+            <div class="q-sub-filters">
+                <button id="sub-daily" class="q-sub-btn active">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    Daily <span class="q-timer">⏱ 8h 24m</span>
+                </button>
+                <button id="sub-weekly" class="q-sub-btn weekly-btn">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    Weekly <span class="q-timer">⏱ 4d 12h</span>
+                </button>
+                <button id="sub-special" class="q-sub-btn special-btn">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+                    Special
+                </button>
+            </div>
+
+            <div id="subview-daily">
+                <div class="q-info-banner daily-banner">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    <span>Daily quests reset every 24 hours. Complete them all to earn a bonus streak reward!</span>
+                </div>
+
+                <div class="q-progress-header">
+                    <span>1/4 completed</span>
+                    <span class="q-xp-total">⚡ 700 XP available</span>
+                </div>
+
+                <div class="q-card-grid">
+                    <div class="q-card">
+                        <div class="q-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg></div>
+                        <div class="q-card-content">
+                            <div class="q-badges-row"><span class="q-badge daily">Daily</span></div>
+                            <h3>Listen to 5 new songs</h3>
+                            <p>Discover fresh tracks and earn XP</p>
+                            <div class="q-prog-text"><span>3 / 5</span><span class="q-xp">+150 XP</span></div>
+                            <div class="q-prog-bar"><div class="fill" style="width: 60%;"></div></div>
+                            <div class="q-time">⏱ Resets in 8h 24m</div>
+                        </div>
+                        <div class="q-circle"></div>
+                    </div>
+
+                    <div class="q-card done">
+                        <div class="q-done-pill">DONE</div>
+                        <div class="q-circle checked">✓</div>
+                        <div class="q-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg></div>
+                        <div class="q-card-content">
+                            <div class="q-badges-row"><span class="q-badge daily">Daily</span></div>
+                            <h3>Create a new playlist</h3>
+                            <p>Organize your favorite music</p>
+                            <div class="q-prog-text"><span>1 / 1</span><span class="q-xp">+100 XP</span></div>
+                            <div class="q-prog-bar"><div class="fill" style="width: 100%;"></div></div>
+                            <div class="q-time">⏱ Resets in 8h 24m</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="subview-weekly" style="display: none;">
+                <div class="q-info-banner weekly-banner">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <span>Weekly quests offer larger XP rewards and exclusive badges. They reset every Monday.</span>
+                </div>
+
+                <div class="q-progress-header">
+                    <span>1/3 completed</span>
+                    <span class="q-xp-total" style="color: #a855f7;">⚡ 1500 XP available</span>
+                </div>
+
+                <div class="q-card-grid">
+                    <div class="q-card">
+                        <div class="q-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+                        <div class="q-card-content">
+                            <div class="q-badges-row">
+                                <span class="q-badge weekly">Weekly</span>
+                                <span class="q-badge gold">🎁 Rare Badge</span>
+                            </div>
+                            <h3>Genre Deep Dive</h3>
+                            <p>Listen to 20 songs from a single genre</p>
+                            <div class="q-prog-text"><span>12 / 20</span><span class="q-xp">+600 XP</span></div>
+                            <div class="q-prog-bar"><div class="fill" style="width: 60%; background-color: var(--accent-crimson);"></div></div>
+                            <div class="q-time">⏱ Resets in 4d 12h</div>
+                        </div>
+                        <div class="q-circle"></div>
+                    </div>
+
+                    <div class="q-card">
+                        <div class="q-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg></div>
+                        <div class="q-card-content">
+                            <div class="q-badges-row">
+                                <span class="q-badge weekly">Weekly</span>
+                            </div>
+                            <h3>Social Sharing</h3>
+                            <p>Share 3 songs with your friends</p>
+                            <div class="q-prog-text"><span>1 / 3</span><span class="q-xp">+400 XP</span></div>
+                            <div class="q-prog-bar"><div class="fill" style="width: 33%; background-color: var(--accent-crimson);"></div></div>
+                            <div class="q-time">⏱ Resets in 4d 12h</div>
+                        </div>
+                        <div class="q-circle"></div>
+                    </div>
+
+                    <div class="q-card done">
+                        <div class="q-done-pill">DONE</div>
+                        <div class="q-circle checked">✓</div>
+                        <div class="q-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
+                        <div class="q-card-content">
+                            <div class="q-badges-row">
+                                <span class="q-badge weekly">Weekly</span>
+                                <span class="q-badge gold">🎁 +50 Bonus XP</span>
+                            </div>
+                            <h3>Artist Marathon</h3>
+                            <p>Listen to 5 different artists</p>
+                            <div class="q-prog-text"><span>5 / 5</span><span class="q-xp muted">+350 XP</span></div>
+                            <div class="q-prog-bar"><div class="fill" style="width: 100%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="subview-special" style="display: none;">
+                <div class="q-info-banner special-banner">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c0 0-4.5 5.5-4.5 10a4.5 4.5 0 0 0 9 0C16.5 7.5 12 2 12 2z"></path></svg>
+                    <span>Limited-time special quests. Complete them before they expire for rare rewards!</span>
+                </div>
+
+                <div class="q-progress-header">
+                    <span>0/2 completed</span>
+                    <span class="q-xp-total" style="color: #ef4444;">⚡ 2000 XP available</span>
+                </div>
+
+                <div class="q-card-grid">
+                    <div class="q-card">
+                        <div class="q-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-crimson)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 17.5L3 6V3h3l11.5 11.5"></path><path d="M13 19l6-6"></path><path d="M16 16l4 4"></path><path d="M19 21l2-2"></path><path d="M6.5 12.5L3 16v3h3l3.5-3.5"></path></svg></div>
+                        <div class="q-card-content">
+                            <div class="q-badges-row">
+                                <span class="q-badge special">Special</span>
+                                <span class="q-badge gold">🎁 Epic Achievement</span>
+                            </div>
+                            <h3>Weekend Warrior</h3>
+                            <p>Listen to music for 2 hours this weekend</p>
+                            <div class="q-prog-text"><span>0 / 120 mins</span><span class="q-xp" style="color: var(--accent-crimson);">+800 XP</span></div>
+                            <div class="q-prog-bar"><div class="fill" style="width: 0%; background-color: var(--accent-crimson);"></div></div>
+                            <div class="q-time">⏱ Resets in 2d 00h</div>
+                        </div>
+                        <div class="q-circle"></div>
+                    </div>
+
+                    <div class="q-card">
+                        <div class="q-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-crimson)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
+                        <div class="q-card-content">
+                            <div class="q-badges-row">
+                                <span class="q-badge special">Special</span>
+                                <span class="q-badge gold">🎁 Legendary Badge</span>
+                            </div>
+                            <h3>Discovery Week</h3>
+                            <p>Listen to a new artist every day for 7 days</p>
+                            <div class="q-prog-text"><span>3 / 7 days</span><span class="q-xp" style="color: var(--accent-crimson);">+1200 XP</span></div>
+                            <div class="q-prog-bar"><div class="fill" style="width: 42%; background-color: var(--accent-crimson);"></div></div>
+                            <div class="q-time">⏱ Resets in 4d 00h</div>
+                        </div>
+                        <div class="q-circle"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <h3 class="footer-logo-text">Sound Journey</h3>
+            <p>Твій цифровий притулок для меланхолійних<br>ритмів та глибоких басів.</p>
+        </div>
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h4>NAVIGATION:</h4>
+                <ul class="footer-nav-simple">
+                    <li><a href="#top" class="scroll-link">Home</a></li>
+                    <li><a href="charts.html" class="scroll-link">Charts</a></li>
+                    <li><a href="quests.html" class="scroll-link">Achievements & Quests</a></li>
+                    <li><a href="#" class="scroll-link">Friends</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>WE ARE ON:</h4>
+                <ul class="footer-nav-simple">
+                    <li><a href="https://open.spotify.com" target="_blank" class="scroll-link">Spotify</a></li>
+                    <li><a href="https://music.apple.com" target="_blank" class="scroll-link">Apple Music</a></li>
+                    <li><a href="https://soundcloud.com" target="_blank" class="scroll-link">SoundCloud</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    // 1. Головні вкладки: Achievements vs Quests
+    const btnAchv = document.getElementById('btn-achievements');
+    const btnQuests = document.getElementById('btn-quests');
+    const viewAchv = document.getElementById('view-achievements');
+    const viewQuests = document.getElementById('view-quests');
+
+    btnAchv.addEventListener('click', () => {
+        btnAchv.classList.add('active');
+        btnQuests.classList.remove('active');
+        viewAchv.style.display = 'block';
+        viewQuests.style.display = 'none';
+        btnAchv.style.color = 'white';
+        btnQuests.style.color = 'var(--text-muted)';
+    });
+
+    btnQuests.addEventListener('click', () => {
+        btnQuests.classList.add('active');
+        btnAchv.classList.remove('active');
+        viewQuests.style.display = 'block';
+        viewAchv.style.display = 'none';
+        btnQuests.style.color = 'white';
+        btnAchv.style.color = 'var(--text-muted)';
+    });
+
+    // 2. Логіка фільтрації карток Achievements (ВІДНОВЛЕНО!)
+    const filterBtns = document.querySelectorAll('.achievements-filters .filter-btn');
+    const achvCards = document.querySelectorAll('.achievements-grid .achv-card');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(f => f.classList.remove('active'));
+            btn.classList.add('active');
+            const targetCategory = btn.getAttribute('data-target');
+
+            achvCards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                if (targetCategory === 'all' || cardCategory === targetCategory) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // 3. Внутрішні вкладки: Daily vs Weekly vs Special
+    const subDaily = document.getElementById('sub-daily');
+    const subWeekly = document.getElementById('sub-weekly');
+    const subSpecial = document.getElementById('sub-special');
+
+    const viewDaily = document.getElementById('subview-daily');
+    const viewWeekly = document.getElementById('subview-weekly');
+    const viewSpecial = document.getElementById('subview-special');
+
+    function resetSubTabs() {
+        subDaily.classList.remove('active');
+        subWeekly.classList.remove('active');
+        subSpecial.classList.remove('active');
+        viewDaily.style.display = 'none';
+        viewWeekly.style.display = 'none';
+        viewSpecial.style.display = 'none';
+    }
+
+    subDaily.addEventListener('click', () => {
+        resetSubTabs();
+        subDaily.classList.add('active');
+        viewDaily.style.display = 'block';
+    });
+
+    subWeekly.addEventListener('click', () => {
+        resetSubTabs();
+        subWeekly.classList.add('active');
+        viewWeekly.style.display = 'block';
+    });
+
+    subSpecial.addEventListener('click', () => {
+        resetSubTabs();
+        subSpecial.classList.add('active');
+        viewSpecial.style.display = 'block';
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Journey - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/course.css">
+</head>
+<body>
+
+<div class="desktop-frame">
+    <header id="top">
+        <div class="header-left">
+            <div class="brand-logo">
+                <div class="logo-box">
+                    <img src="Pictures/Logo.png" alt="Logo">
+                </div>
+                <a href="my_code.html" class="brand-name" style="text-decoration: none;">Sound Journey</a>
+            </div>
+
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <svg class="search-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" class="search-input" placeholder="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="nav-center">
+            <a href="charts.html">Charts</a>
+            <a href="quests.html">Achievements & Quests</a>
+            <span>Library</span>
+            <span>Community</span>
+        </div>
+        
+        <div class="premium-pill">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 15l3-9 3 4 3-5 3 5 3-4 3 9z"></path>
+        <line x1="4" y1="19" x2="20" y2="19"></line>
+    </svg>
+    Premium
+</div>
+    </header>
+
+    <main class="main-dashboard" style="display: flex; flex-direction: column; gap: 40px; padding-top: 20px;">
+        
+        <div class="dash-wide-profile">
+            <div class="dw-header-row">
+                <div class="dw-avatar-wrap">
+                    <img src="Pictures/avatar.png" alt="Victor">
+                    <div class="dw-level">LEVEL<br><span>18</span></div>
+                </div>
+                <div class="dw-info">
+                    <div class="dw-name-row">
+                        <h1>Victor Satanovskyi</h1>
+                        <span class="dw-master-badge">⭐ Music Master</span>
+                    </div>
+                    <p class="dw-quote">"Exploring every genre, mastering every beat. 🎵"</p>
+                    
+                    <div class="dw-xp-section">
+                        <div class="dw-xp-labels">
+                            <span>Experience Points</span>
+                            <span class="xp-val">600 / 800 XP</span>
+                        </div>
+                        <div class="dw-xp-bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <div class="dw-xp-sub">200 XP until Level 19</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dw-stats-row">
+                <div class="dw-stat-card">
+                    <div class="dw-stat-title">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+                        Achievements
+                    </div>
+                    <div class="dw-stat-val">17</div>
+                </div>
+                <div class="dw-stat-card">
+                    <div class="dw-stat-title">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                        Streak
+                    </div>
+                    <div class="dw-stat-val">15 <span style="font-size: 13px; color: var(--text-muted); font-weight: 500;">Days</span></div>
+                </div>
+                <div class="dw-stat-card">
+                    <div class="dw-stat-title">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        Points
+                    </div>
+                    <div class="dw-stat-val">4.6K</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dash-quests-wrapper">
+            <div class="dq-header-area">
+                <div class="dq-h-left">
+                    <h2>Daily Quests</h2>
+                    <p>Complete challenges to earn XP and rewards</p>
+                </div>
+                <div class="dq-h-right">
+                    <span>Resets in</span>
+                    <strong>8h 24m</strong>
+                </div>
+            </div>
+
+            <div class="dq-grid">
+                <div class="dq-card">
+                    <div class="dq-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg></div>
+                    <div class="dq-content">
+                        <h3>Listen to 5 new songs</h3>
+                        <p>Discover fresh tracks today</p>
+                        <div class="dq-prog-row"><span>3 / 5</span><span class="dq-xp">+ 150 XP</span></div>
+                        <div class="dq-bar"><div class="fill" style="width: 60%;"></div></div>
+                    </div>
+                    <div class="dq-circle"></div>
+                </div>
+
+                <div class="dq-card completed">
+                    <div class="dq-done-badge">COMPLETED</div>
+                    <div class="dq-icon-box filled"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg></div>
+                    <div class="dq-content">
+                        <h3>Create a new playlist</h3>
+                        <p>Organize your favorite music</p>
+                        <div class="dq-prog-row"><span>1 / 1</span><span class="dq-xp muted">+ 100 XP</span></div>
+                        <div class="dq-bar"><div class="fill" style="width: 100%;"></div></div>
+                    </div>
+                </div>
+
+                <div class="dq-card">
+                    <div class="dq-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></div>
+                    <div class="dq-content">
+                        <h3>Listen for 30 minutes</h3>
+                        <p>Keep the music flowing</p>
+                        <div class="dq-prog-row"><span>22 / 30 mins</span><span class="dq-xp">+ 200 XP</span></div>
+                        <div class="dq-bar"><div class="fill" style="width: 73%;"></div></div>
+                    </div>
+                    <div class="dq-circle"></div>
+                </div>
+
+                <div class="dq-card">
+                    <div class="dq-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+                    <div class="dq-content">
+                        <h3>Explore 2 new genres</h3>
+                        <p>Broaden your musical horizons</p>
+                        <div class="dq-prog-row"><span>0 / 2</span><span class="dq-xp">+ 250 XP</span></div>
+                        <div class="dq-bar"><div class="fill" style="width: 0%;"></div></div>
+                    </div>
+                    <div class="dq-circle"></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="listen-now-section">
+        <h2>Listen Now</h2>
+        <div class="tracks-grid">
+            <div class="track-card"><img src="Pictures/Тону.png" alt="Тону" class="track-cover-placeholder" style="object-fit: cover;"><p class="track-genre">POST-PUNK</p><p class="track-title">"Тону"</p><p class="track-artist">SUDNO</p></div>
+            <div class="track-card"><img src="Pictures/Farben.png" alt="Farben" class="track-cover-placeholder" style="object-fit: cover;"><p class="track-genre">EBM</p><p class="track-title">"Farben"</p><p class="track-artist">Orange Sector</p></div>
+            <div class="track-card"><img src="Pictures/Силуети.png" alt="Силуети" class="track-cover-placeholder" style="object-fit: cover;"><p class="track-genre">POST-PUNK</p><p class="track-title">"Силуети"</p><p class="track-artist">SadSvit & Структура щастя</p></div>
+            <div class="track-card"><img src="Pictures/Resistance.png" alt="The Resistance" class="track-cover-placeholder" style="object-fit: cover;"><p class="track-genre">HARD ROCK</p><p class="track-title">"The Resistance"</p><p class="track-artist">Skillet</p></div>
+            <div class="track-card"><img src="Pictures/End of Beginning.png" alt="End of Beginning" class="track-cover-placeholder" style="object-fit: cover;"><p class="track-genre">SYNTH-POP</p><p class="track-title">"End of Beginning"</p><p class="track-artist">Djo</p></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <h3 class="footer-logo-text">Sound Journey</h3>
+            <p>Твій цифровий притулок для меланхолійних<br>ритмів та глибоких басів.</p>
+        </div>
+        
+        <div class="footer-columns">
+            <div class="footer-col">
+    <h4>NAVIGATION:</h4>
+    <ul class="footer-nav-simple">
+        <li><a href="#top" class="scroll-link">Home</a></li>
+        <li><a href="charts.html" class="scroll-link">Charts</a></li>
+        <li><a href="quests.html" class="scroll-link">Achievements & Quests</a></li>
+        <li><a href="#" class="scroll-link">Friends</a></li>
+    </ul>
+</div>
+
+            <div class="footer-col">
+    <h4>WE ARE ON:</h4>
+    <ul class="footer-nav-simple">
+        <li><a href="https://open.spotify.com" target="_blank" class="scroll-link">Spotify</a></li>
+        <li><a href="https://music.apple.com" target="_blank" class="scroll-link">Apple Music</a></li>
+        <li><a href="https://soundcloud.com" target="_blank" class="scroll-link">SoundCloud</a></li>
+    </ul>
+</div>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

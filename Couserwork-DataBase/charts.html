@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charts - Sound Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/course.css">
+</head>
+<body>
+
+<div class="desktop-frame">
+    <header id="top">
+        <div class="header-left">
+            <div class="brand-logo">
+                <div class="logo-box">
+                    <img src="Pictures/Logo.png" alt="Logo">
+                </div>
+                <a href="my_code.html" class="brand-name" style="text-decoration: none;">Sound Journey</a>
+            </div>
+
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <svg class="search-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" class="search-input" placeholder="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="nav-center">
+            <a href="charts.html" class="active-nav">Charts</a>
+            <a href="quests.html">Achievements & Quests</a>
+            <span>Library</span>
+            <span>Community</span>
+        </div>
+        
+        <div class="premium-pill">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-crimson)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 15l3-9 3 4 3-5 3 5 3-4 3 9z"></path>
+        <line x1="4" y1="19" x2="20" y2="19"></line>
+    </svg>
+    Premium
+</div>
+    </header>
+
+    <main class="charts-main">
+        <nav class="breadcrumb">
+            <a href="my_code.html">Home</a>
+            <span class="separator">></span>
+            <span class="current">Charts</span>
+        </nav>
+
+        <div class="charts-hero">
+            <div class="charts-title-area">
+                <div class="title-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-crimson)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="20" x2="18" y2="10"></line>
+                        <line x1="12" y1="20" x2="12" y2="4"></line>
+                        <line x1="6" y1="20" x2="6" y2="14"></line>
+                    </svg>
+                </div>
+                <h1>Charts</h1>
+            </div>
+            <div class="charts-hero-content">
+                <p>Discover what's trending worldwide. Listen to new hits and earn XP for<br>every first play.</p>
+                <div class="updated-badge">
+                    <span class="dot"></span> Updated <span>25 Apr 2026</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="charts-stats-grid">
+            <div class="c-stat-card">
+                <div class="c-stat-header">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    Global Tracks
+                </div>
+                <div class="c-stat-val">10</div>
+                <div class="c-stat-sub">in top chart</div>
+            </div>
+            <div class="c-stat-card">
+                <div class="c-stat-header">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+                    Viral Tracks
+                </div>
+                <div class="c-stat-val">8</div>
+                <div class="c-stat-sub">trending now</div>
+            </div>
+            <div class="c-stat-card">
+                <div class="c-stat-header">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+                    Genres Covered
+                </div>
+                <div class="c-stat-val">6</div>
+                <div class="c-stat-sub">genre peaks</div>
+            </div>
+            <div class="c-stat-card">
+                <div class="c-stat-header highlight">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                    XP Available
+                </div>
+                <div class="c-stat-val">1900+</div>
+                <div class="c-stat-sub">unplayed tracks</div>
+            </div>
+        </div>
+
+        <div class="charts-tabs">
+            <button id="tab-global" class="c-tab-btn active">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                Global Top
+            </button>
+            <button id="tab-viral" class="c-tab-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6 6 3-6 3-3 6-3-6-6-3 6-3z"></path></svg>
+                Viral Discoveries
+            </button>
+            <button id="tab-genre" class="c-tab-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+                Genre Peaks
+            </button>
+        </div>
+
+        <div id="view-global">
+            <div class="global-banner">
+                <div class="g-banner-left">
+                    <div class="g-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                    </div>
+                    <div class="g-text">
+                        <h4>Earn XP for every new hit you play</h4>
+                        <p>You have <span>7 unplayed</span> tracks worth up to <span>+755 XP</span> total</p>
+                    </div>
+                </div>
+                <button class="btn-play-all">▶ Play All New</button>
+            </div>
+
+            <div class="tracks-list-container">
+                <div class="t-row t-header">
+                    <div class="t-col t-num">#</div>
+                    <div class="t-col t-info">TRACK / ARTIST</div>
+                    <div class="t-col t-change" style="text-align: right;">CHANGE</div>
+                    <div class="t-col t-time">TIME</div>
+                    <div class="t-col t-streams">STREAMS</div>
+                    <div class="t-col t-xp">XP</div>
+                </div>
+
+                <div class="t-row">
+                    <div class="t-col t-num">
+                        <span class="rank-text"><span class="top-rank">1</span></span>
+                        <div class="play-hover"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></div>
+                    </div>
+                    <div class="t-col t-info">
+                        <img src="https://images.genius.com/2590d316b35bf3ff7c06a4de1f537244.1000x1000x1.png" class="t-img-box" style="object-fit: cover;" alt="Cover">
+                        <div class="t-details">
+                            <div class="t-title-row"><h4>SPIT IN MY FACE!</h4><span class="fire-icon">🔥</span></div>
+                            <div class="t-artist">ThxSoMch</div>
+                        </div>
+                    </div>
+                    <div class="t-col t-change" style="text-align: right;"><span class="trend-up">↗ +1</span></div>
+                    <div class="t-col t-time">⏱ 3:47</div>
+                    <div class="t-col t-streams">48.2M</div>
+                    <div class="t-col t-xp"><button class="btn-xp">⚡ +120 XP</button></div>
+                </div>
+
+                <div class="t-row">
+                    <div class="t-col t-num">
+                        <span class="rank-text"><span class="top-rank">2</span></span>
+                        <div class="play-hover"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></div>
+                    </div>
+                    <div class="t-col t-info">
+                        <img src="https://images.genius.com/e888e48ca0c6076ff66857d79c11288c.1000x1000x1.jpg" class="t-img-box" style="object-fit: cover; opacity: 0.5;" alt="Cover">
+                        <div class="t-details">
+                            <div class="t-title-row"><h4 style="color: var(--text-muted);">Killer</h4></div>
+                            <div class="t-artist">Mareux</div>
+                        </div>
+                    </div>
+                    <div class="t-col t-change" style="text-align: right;"><span class="trend-down">↘ -1</span></div>
+                    <div class="t-col t-time">⏱ 4:12</div>
+                    <div class="t-col t-streams">41.7M</div>
+                    <div class="t-col t-xp"><button class="btn-xp earned">⚡ earned</button></div>
+                </div>
+
+                <div class="t-row">
+                    <div class="t-col t-num">
+                        <span class="rank-text"><span class="top-rank">3</span></span>
+                        <div class="play-hover"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></div>
+                    </div>
+                    <div class="t-col t-info">
+                        <img src="https://cdn-images.dzcdn.net/images/cover/a64028626861456c1c48df2a02b6e412/0x1900-000000-80-0-0.jpg" class="t-img-box" style="object-fit: cover;" alt="Cover">
+                        <div class="t-details">
+                            <div class="t-title-row"><h4>Силуети</h4></div>
+                            <div class="t-artist">SadSvit</div>
+                        </div>
+                    </div>
+                    <div class="t-col t-change" style="text-align: right;"><span class="trend-up">↗ +2</span></div>
+                    <div class="t-col t-time">⏱ 5:03</div>
+                    <div class="t-col t-streams">36.9M</div>
+                    <div class="t-col t-xp"><button class="btn-xp">⚡ +110 XP</button></div>
+                </div>
+
+                <div class="t-row">
+                    <div class="t-col t-num">
+                        <span class="rank-text">4</span>
+                        <div class="play-hover"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></div>
+                    </div>
+                    <div class="t-col t-info">
+                        <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/f/a/e/2/791351570015623.jpg" class="t-img-box" style="object-fit: cover;" alt="Cover">
+                        <div class="t-details">
+                            <div class="t-title-row"><h4>Toska</h4></div>
+                            <div class="t-artist">Molchat Doma</div>
+                        </div>
+                    </div>
+                    <div class="t-col t-change" style="text-align: right;"><span class="trend-down">↘ -1</span></div>
+                    <div class="t-col t-time">⏱ 3:28</div>
+                    <div class="t-col t-streams">34.1M</div>
+                    <div class="t-col t-xp"><button class="btn-xp">⚡ +90 XP</button></div>
+                </div>
+
+                <div class="t-row">
+                    <div class="t-col t-num">
+                        <span class="rank-text">5</span>
+                        <div class="play-hover"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></div>
+                    </div>
+                    <div class="t-col t-info">
+                        <img src="https://i.ytimg.com/vi/UBbMnphYv9Y/maxresdefault.jpg" class="t-img-box" style="object-fit: cover; opacity: 0.5;" alt="Cover">
+                        <div class="t-details">
+                            <div class="t-title-row"><h4 style="color: var(--text-muted);">Hass Und Liebe</h4></div>
+                            <div class="t-artist">Brutalismus 3000</div>
+                        </div>
+                    </div>
+                    <div class="t-col t-change" style="text-align: right;"><span class="trend-flat">—</span></div>
+                    <div class="t-col t-time">⏱ 4:55</div>
+                    <div class="t-col t-streams">29.8M</div>
+                    <div class="t-col t-xp"><button class="btn-xp earned">⚡ earned</button></div>
+                </div>
+
+                <div class="t-row">
+                    <div class="t-col t-num">
+                        <span class="rank-text">6</span>
+                        <div class="play-hover"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></div>
+                    </div>
+                    <div class="t-col t-info">
+                        <img src="https://cdn-images.dzcdn.net/images/cover/3798ee22a352c1242e9972e546ef2999/0x1900-000000-80-0-0.jpg" class="t-img-box" style="object-fit: cover;" alt="Cover">
+                        <div class="t-details">
+                            <div class="t-title-row"><h4>Scars</h4><span class="badge-new">NEW</span></div>
+                            <div class="t-artist">Dionnysuss</div>
+                        </div>
+                    </div>
+                    <div class="t-col t-change" style="text-align: right;"><span class="trend-up">↗ +3</span></div>
+                    <div class="t-col t-time">⏱ 6:14</div>
+                    <div class="t-col t-streams">27.2M</div>
+                    <div class="t-col t-xp"><button class="btn-xp">⚡ +140 XP</button></div>
+                </div>
+
+                <div class="t-row">
+                    <div class="t-col t-num">
+                        <span class="rank-text">7</span>
+                        <div class="play-hover"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></div>
+                    </div>
+                    <div class="t-col t-info">
+                        <img src="https://i1.sndcdn.com/artworks-Jn1xA7L8JB64-0-t500x500.jpg" class="t-img-box" style="object-fit: cover;" alt="Cover">
+                        <div class="t-details">
+                            <div class="t-title-row"><h4>Lust</h4></div>
+                            <div class="t-artist">Marino</div>
+                        </div>
+                    </div>
+                    <div class="t-col t-change" style="text-align: right;"><span class="trend-down">↘ -1</span></div>
+                    <div class="t-col t-time">⏱ 3:52</div>
+                    <div class="t-col t-streams">24.6M</div>
+                    <div class="t-col t-xp"><button class="btn-xp">⚡ +85 XP</button></div>
+                </div>
+
+                <div class="t-row" style="border-bottom: none;">
+                    <div class="t-col t-num">
+                        <span class="rank-text">8</span>
+                        <div class="play-hover"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></div>
+                    </div>
+                    <div class="t-col t-info">
+                        <img src="https://i.ytimg.com/vi/oBJt2SU39MI/maxresdefault.jpg" class="t-img-box" style="object-fit: cover;" alt="Cover">
+                        <div class="t-details">
+                            <div class="t-title-row"><h4>Summertime</h4><span class="badge-new">NEW</span></div>
+                            <div class="t-artist">Mareux</div>
+                        </div>
+                    </div>
+                    <div class="t-col t-change" style="text-align: right;"><span class="trend-up">↗ +4</span></div>
+                    <div class="t-col t-time">⏱ 4:37</div>
+                    <div class="t-col t-streams">22.1M</div>
+                    <div class="t-col t-xp"><button class="btn-xp">⚡ +130 XP</button></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="view-viral" style="display: none;">
+            <div class="viral-banner">
+                <div class="v-banner-left">
+                    <div class="v-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6 6 3-6 3-3 6-3-6-6-3 6-3z"></path></svg>
+                    </div>
+                    <div class="v-text">
+                        <h4>These tracks are blowing up right now</h4>
+                        <p>Viral discoveries earn <span>bonus XP</span> — be among the first to listen!</p>
+                    </div>
+                </div>
+                <div class="v-banner-right">
+                    <span>↑ Viral score based on 24h growth rate</span>
+                </div>
+            </div>
+            
+            <div class="viral-legend">
+                Viral score: <div class="red-line"></div> = trending momentum
+            </div>
+
+            <div class="tracks-list-container">
+                <div class="t-row t-header">
+                    <div class="t-col t-num">#</div>
+                    <div class="t-col t-info">TRACK / ARTIST</div>
+                    <div class="t-col t-change">CHANGE</div>
+                    <div class="t-col t-time">TIME</div>
+                    <div class="t-col t-streams">STREAMS</div>
+                    <div class="t-col t-xp">XP</div>
+                </div>
+
+                <div class="t-row">
+                    <div class="t-col t-num">
+                        <span class="rank-text"><span class="top-rank">1</span></span>
+                        <div class="play-hover"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></div>
+                    </div>
+                    <div class="t-col t-info">
+                        <img src="https://i.ytimg.com/vi/a5tpAOPHO7c/maxresdefault.jpg" class="t-img-box" style="object-fit: cover;" alt="Cover">
+                        <div class="t-details">
+                            <div class="t-title-row"><h4>DOPAMINE / COME DOWN</h4><span class="fire-icon">🔥</span><span class="badge-new">NEW</span></div>
+                            <div class="t-artist">Kami Kehoe</div>
+                        </div>
+                    </div>
+                    <div class="t-col t-change">
+                        <div class="score-bar"><div class="fill" style="width: 99%;"></div></div>
+                        <span class="score-val">99</span><span class="change-new">NEW</span>
+                    </div>
+                    <div class="t-col t-time">⏱ 2:58</div>
+                    <div class="t-col t-streams">2.1M</div>
+                    <div class="t-col t-xp"><button class="btn-xp">⚡ +200 XP</button></div>
+                </div>
+
+                <div class="t-row">
+                    <div class="t-col t-num">
+                        <span class="rank-text"><span class="top-rank">2</span></span>
+                        <div class="play-hover"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></div>
+                    </div>
+                    <div class="t-col t-info">
+                        <img src="https://i.ytimg.com/vi/eBaGlo1b3ZY/sddefault.jpg" class="t-img-box" style="object-fit: cover;" alt="Cover">
+                        <div class="t-details">
+                            <div class="t-title-row"><h4>Montagem Toma</h4><span class="badge-new">NEW</span></div>
+                            <div class="t-artist">MXZI, sk3tch01, X972</div>
+                        </div>
+                    </div>
+                    <div class="t-col t-change">
+                        <div class="score-bar"><div class="fill" style="width: 94%;"></div></div>
+                        <span class="score-val">94</span><span class="change-up">↗ +0</span>
+                    </div>
+                    <div class="t-col t-time">⏱ 5:22</div>
+                    <div class="t-col t-streams">1.8M</div>
+                    <div class="t-col t-xp"><button class="btn-xp">⚡ +180 XP</button></div>
+                </div>
+
+                <div class="t-row" style="border-bottom: none;">
+                    <div class="t-col t-num">
+                        <span class="rank-text"><span class="top-rank">3</span></span>
+                        <div class="play-hover"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></div>
+                    </div>
+                    <div class="t-col t-info">
+                        <img src="https://i.audiomack.com/chris-grey/d03ed2c864.webp?width=456" class="t-img-box" style="object-fit: cover;" alt="Cover">
+                        <div class="t-details">
+                            <div class="t-title-row"><h4>DANGEROUS GAME</h4><span class="badge-new">NEW</span></div>
+                            <div class="t-artist">CHRIS GREY</div>
+                        </div>
+                    </div>
+                    <div class="t-col t-change">
+                        <div class="score-bar"><div class="fill" style="width: 91%;"></div></div>
+                        <span class="score-val">91</span><span class="change-new">NEW</span>
+                    </div>
+                    <div class="t-col t-time">⏱ 4:01</div>
+                    <div class="t-col t-streams">1.6M</div>
+                    <div class="t-col t-xp"><button class="btn-xp">⚡ +175 XP</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="view-genre" style="display: none;">
+            <div class="genre-filters">
+                <button class="g-filter-btn active">Post-Punk</button>
+                <button class="g-filter-btn">EBM</button>
+                <button class="g-filter-btn">Hip-Hop</button>
+                <button class="g-filter-btn">Ambient</button>
+                <button class="g-filter-btn">Metal</button>
+                <button class="g-filter-btn">Jazz</button>
+            </div>
+
+            <div class="genre-banner">
+                <div class="gb-left">
+                    <div class="gb-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        Post-Punk — Peak Chart
+                    </div>
+                    <div class="gb-sub"><span>4 unplayed</span> tracks · up to <span>+435 XP</span> available</div>
+                </div>
+                <button class="btn-play-all">▶ Play Genre</button>
+            </div>
+
+            <div class="tracks-list-container">
+                <div class="t-row t-header">
+                    <div class="t-col t-num">#</div>
+                    <div class="t-col t-info">TRACK / ARTIST</div>
+                    <div class="t-col t-change" style="text-align: right;">CHANGE</div>
+                    <div class="t-col t-time">TIME</div>
+                    <div class="t-col t-streams">STREAMS</div>
+                    <div class="t-col t-xp">XP</div>
+                </div>
+
+                <div class="t-row">
+                    <div class="t-col t-num">
+                        <span class="rank-text"><span class="top-rank">1</span></span>
+                        <div class="play-hover"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></div>
+                    </div>
+                    <div class="t-col t-info">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273d4694ecc1dca40c251013ef4" class="t-img-box" style="object-fit: cover;" alt="Cover">
+                        <div class="t-details">
+                            <div class="t-title-row"><h4>Cassette</h4><span class="fire-icon">🔥</span></div>
+                            <div class="t-artist">SadSvit</div>
+                        </div>
+                    </div>
+                    <div class="t-col t-change" style="text-align: right;"><span class="trend-up">↗ +0</span></div>
+                    <div class="t-col t-time">⏱ 4:15</div>
+                    <div class="t-col t-streams">8.4M</div>
+                    <div class="t-col t-xp"><button class="btn-xp">⚡ +110 XP</button></div>
+                </div>
+
+                <div class="t-row">
+                    <div class="t-col t-num">
+                        <span class="rank-text"><span class="top-rank">2</span></span>
+                        <div class="play-hover"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></div>
+                    </div>
+                    <div class="t-col t-info">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music71/v4/32/9f/f3/329ff3c5-8227-5161-fc73-7706a16b076d/cover.jpg/1200x630bb.jpg" class="t-img-box" style="object-fit: cover; opacity: 0.5;" alt="Cover">
+                        <div class="t-details">
+                            <div class="t-title-row"><h4 style="color: var(--text-muted);">Farben</h4></div>
+                            <div class="t-artist">Orange Sector</div>
+                        </div>
+                    </div>
+                    <div class="t-col t-change" style="text-align: right;"><span class="trend-down">↘ 0</span></div>
+                    <div class="t-col t-time">⏱ 3:48</div>
+                    <div class="t-col t-streams">7.1M</div>
+                    <div class="t-col t-xp"><button class="btn-xp earned">⚡ earned</button></div>
+                </div>
+
+                <div class="t-row">
+                    <div class="t-col t-num">
+                        <span class="rank-text"><span class="top-rank">3</span></span>
+                        <div class="play-hover"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></div>
+                    </div>
+                    <div class="t-col t-info">
+                        <img src="https://i.ytimg.com/vi/0Vr2fNPeV9s/maxresdefault.jpg" class="t-img-box" style="object-fit: cover;" alt="Cover">
+                        <div class="t-details">
+                            <div class="t-title-row"><h4>ТУТ БУЛО МІСТО</h4><span class="badge-new">NEW</span></div>
+                            <div class="t-artist">SUDNO</div>
+                        </div>
+                    </div>
+                    <div class="t-col t-change" style="text-align: right;"><span class="change-new">NEW</span></div>
+                    <div class="t-col t-time">⏱ 4:02</div>
+                    <div class="t-col t-streams">5.9M</div>
+                    <div class="t-col t-xp"><button class="btn-xp">⚡ +130 XP</button></div>
+                </div>
+
+                <div class="t-row">
+                    <div class="t-col t-num">
+                        <span class="rank-text">4</span>
+                        <div class="play-hover"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></div>
+                    </div>
+                    <div class="t-col t-info">
+                        <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/f/a/e/2/791351570015623.jpg" class="t-img-box" style="object-fit: cover;" alt="Cover">
+                        <div class="t-details">
+                            <div class="t-title-row"><h4>Toska</h4></div>
+                            <div class="t-artist">Molchat Doma</div>
+                        </div>
+                    </div>
+                    <div class="t-col t-change" style="text-align: right;"><span class="trend-flat">—</span></div>
+                    <div class="t-col t-time">⏱ 3:33</div>
+                    <div class="t-col t-streams">5.2M</div>
+                    <div class="t-col t-xp"><button class="btn-xp">⚡ +90 XP</button></div>
+                </div>
+
+                <div class="t-row" style="border-bottom: none;">
+                    <div class="t-col t-num">
+                        <span class="rank-text">5</span>
+                        <div class="play-hover"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></div>
+                    </div>
+                    <div class="t-col t-info">
+                        <img src="https://images.genius.com/e888e48ca0c6076ff66857d79c11288c.1000x1000x1.jpg" class="t-img-box" style="object-fit: cover;" alt="Cover">
+                        <div class="t-details">
+                            <div class="t-title-row"><h4>Killer</h4></div>
+                            <div class="t-artist">Mareux</div>
+                        </div>
+                    </div>
+                    <div class="t-col t-change" style="text-align: right;"><span class="trend-up">↗ +0</span></div>
+                    <div class="t-col t-time">⏱ 5:10</div>
+                    <div class="t-col t-streams">4.7M</div>
+                    <div class="t-col t-xp"><button class="btn-xp">⚡ +105 XP</button></div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+   <footer>
+        <div class="footer-left">
+            <h3 class="footer-logo-text">Sound Journey</h3>
+            <p>Твій цифровий притулок для меланхолійних<br>ритмів та глибоких басів.</p>
+        </div>
+        
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h4>NAVIGATION:</h4>
+                <ul class="footer-nav-simple">
+                    <li><a href="my_code.html" class="scroll-link">Home</a></li>
+                    <li><a href="charts.html" class="scroll-link">Charts</a></li>
+                    <li><a href="quests.html" class="scroll-link">Achievements & Quests</a></li>
+                    <li><a href="#" class="scroll-link">Friends</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+    <h4>WE ARE ON:</h4>
+    <ul class="footer-nav-simple">
+        <li><a href="https://open.spotify.com" target="_blank" class="scroll-link">Spotify</a></li>
+        <li><a href="https://music.apple.com" target="_blank" class="scroll-link">Apple Music</a></li>
+        <li><a href="https://soundcloud.com" target="_blank" class="scroll-link">SoundCloud</a></li>
+    </ul>
+</div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    const tabGlobal = document.getElementById('tab-global');
+    const tabViral = document.getElementById('tab-viral');
+    const tabGenre = document.getElementById('tab-genre');
+    
+    const viewGlobal = document.getElementById('view-global');
+    const viewViral = document.getElementById('view-viral');
+    const viewGenre = document.getElementById('view-genre');
+
+    function resetTabs() {
+        tabGlobal.classList.remove('active');
+        tabViral.classList.remove('active');
+        tabGenre.classList.remove('active');
+        viewGlobal.style.display = 'none';
+        viewViral.style.display = 'none';
+        viewGenre.style.display = 'none';
+    }
+
+    tabGlobal.addEventListener('click', () => {
+        resetTabs();
+        tabGlobal.classList.add('active');
+        viewGlobal.style.display = 'block';
+    });
+
+    tabViral.addEventListener('click', () => {
+        resetTabs();
+        tabViral.classList.add('active');
+        viewViral.style.display = 'block';
+    });
+
+    tabGenre.addEventListener('click', () => {
+        resetTabs();
+        tabGenre.classList.add('active');
+        viewGenre.style.display = 'block';
+    });
+</script>
+
+</body>
+</html>
