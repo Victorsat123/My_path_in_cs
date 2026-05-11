@@ -10,7 +10,6 @@ $(function() {
         course = 1,
         margin = -slideWidth;
 
-    // Клонування для безкінечного циклу
     $('.sldr img:last').clone().prependTo('.sldr');
     $('.sldr img').eq(1).clone().appendTo('.sldr');
     sldr.css('margin-left', -slideWidth);
@@ -52,12 +51,10 @@ $(function() {
         course = course2;
     });
 
-    // Зупинка при наведенні
     sl_ctr.add(nxt_b).add(prv_b).hover(function() {
         sldrStop();
     }, nxt_bSlide);
 
-    // Адаптивність при resize
     function updateSlideWidth() {
         slideWidth = sl_ctr.outerWidth();
         $('.sldr img').css('width', slideWidth);
@@ -68,5 +65,5 @@ $(function() {
         updateSlideWidth();
     });
 
-    nxt_bSlide(); // Старт
+    nxt_bSlide();
 });
