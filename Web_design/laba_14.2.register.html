@@ -3,41 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Реєстрація</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            padding: 20px;
-            text-align: center;
-        }
-        .form-container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        input {
-            width: 90%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            width: 100%;
-            padding: 12px;
-            background-color: #78e47d;
-            color: black;
-            font-weight: bold;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        button:hover {
-            background-color: #5ecf63;
-        }
-    </style>
+    <link rel="stylesheet" href="Styles/laba_14.css">
 </head>
 <body>
 
@@ -54,7 +20,6 @@
 
     <script>
         function validateForm() {
-            // Отримуємо значення з полів
             let name = document.getElementById("regName").value.trim();
             let email = document.getElementById("regEmail").value.trim();
             let password = document.getElementById("regPassword").value.trim();
@@ -65,22 +30,20 @@
             if (name === "" || email === "" || password === "") {
                 alert("Помилка: Будь ласка, заповніть усі поля!");
                 console.log("Статус: Відхилено (Порожні поля)");
-                return; // Зупиняємо функцію
+                return; 
             }
 
             // Перевірка 2: Чи пароль не менше 6 символів
             if (password.length < 6) {
                 alert("Помилка: Пароль має містити не менше 6 символів!");
                 console.log("Статус: Відхилено (Короткий пароль: " + password.length + " симв.)");
-                return; // Зупиняємо функцію
+                return;
             }
 
             // Якщо всі перевірки пройдені успішно
             alert(name + ", вітаємо! Ви успішно зареєстровані!");
             console.log("Статус: Успішно! Зареєстровано користувача " + name + " (" + email + ")");
             
-            // Опціонально: закрити вікно після успішної реєстрації
-            // window.close(); 
         }
     </script>
 
