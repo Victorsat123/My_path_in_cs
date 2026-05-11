@@ -1,4 +1,4 @@
-// 1. Створюємо масив об'єктів (каталог телефонів)
+// 1. Створюємо масив об'єктів 
 let products = [
     { name: "Samsung J5 2017", screen: 5.2, price: 5400, weight: 160 },
     { name: "iPhone X", screen: 5.8, price: 25000, weight: 170 },
@@ -15,9 +15,8 @@ let result = [];
 
 // 4. Організовуємо перебір елементів за допомогою спрощеного циклу for...of
 for (let product of products) {
-    // Перевіряємо умову: чи входить ціна товару в задані межі
     if (product.price >= minPrice && product.price <= maxPrice) {
-        result.push(product); // Додаємо знайдений об'єкт у масив результатів
+        result.push(product); 
     }
 }
 

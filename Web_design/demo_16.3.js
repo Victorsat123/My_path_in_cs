@@ -5,7 +5,6 @@ let person = {
     
     // Метод, який просто виводить текст у консоль
     'sayHello': function(otherName) {
-        // this.name вказує на властивість name САМЕ ЦЬОГО об'єкта
         console.log("Привіт, " + otherName + "! Мене звуть " + this.name);
     },
     
@@ -17,13 +16,10 @@ let person = {
 
 // 2. Ініціалізуємо об'єкт твоїми власними даними
 person.name = "Віктор";
-person.lastName = "Шевченко";
+person.lastName = "Сатановський";
 
 console.log("--- Виклик методу sayHello ---");
-// Викликаємо метод привітання (передаємо ім'я співрозмовника)
-person.sayHello("Марія");
+person.sayHello("Орест");
 
 console.log("\n--- Виклик методу getFullName ---");
-// Оскільки метод getFullName лише повертає рядок, нам потрібно 
-// самостійно обгорнути його в console.log(), щоб побачити результат
 console.log("Повне ім'я: " + person.getFullName());
