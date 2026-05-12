@@ -2,11 +2,48 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Лабораторна робота №17.4 - Об'єкти JS</title>
-    <script src="demo_16.js" defer></script>
+    <title>Лабораторна робота №17 - Завдання 4</title>
+    <link rel="stylesheet" href="laba_17.css">
+    <script src="demo_17.4.js" defer></script>
 </head>
 <body>
-    <h2>Завдання 1. Об'єкти та масиви в JS</h2>
-    <p>Відкрийте консоль розробника (клавіша <b>F12</b>), щоб побачити відфільтрований масив товарів.</p>
+
+    <h2>Завдання 4: Закріплення навичок (3 блоки)</h2>
+
+    <div class="product-card">
+        <img src="Pictures/headphones.png" width="300" alt="Бездротові навушники">
+        <br>
+        <button id="btn1" onclick="toggleDescription('desc1', 'state1')">Показати / Сховати опис</button>
+
+        <div id="desc1" style="display: none;">
+            <p><strong>Навушники Bass Boost Pro</strong></p>
+            <p>Бездротові навушники з активним шумозаглушенням. Насолоджуйтесь чистим та потужним звуком до 24 годин без підзарядки.</p>
+        </div>
+    </div>
+    <hr>
+
+    <div class="product-card">
+        <img src="Pictures/smartwatch.png" width="300" alt="Смарт-годинник">
+        <br>
+        <button id="btn2" onclick="toggleDescription('desc2', 'state2')">Показати / Сховати опис</button>
+
+        <div id="desc2" style="display: none;">
+            <p><strong>Смарт-годинник TimeMaster</strong></p>
+            <p>Стильний годинник з функцією відстеження серцевого ритму, крокоміром та синхронізацією повідомлень з вашим смартфоном.</p>
+        </div>
+    </div>
+    <hr>
+
+    <div class="product-card">
+        <img src="Pictures/Camera.png" width="300" alt="Фотоапарат">
+        <br>
+        <button id="btn3" onclick="toggleDescription('desc3', 'state3')">Показати / Сховати опис</button>
+
+        <div id="desc3" style="display: none;">
+            <p><strong>Камера ProShot 4K</strong></p>
+            <p>Компактна бездзеркальна камера для професійної зйомки відео у форматі 4K та створення неймовірних фотографій.</p>
+        </div>
+    </div>
+
 </body>
 </html>
