@@ -1,0 +1,30 @@
+class Figure:
+    FIGURES = ["квадрат", "прямокутник", "трикутник"]
+
+    def __init__(self, figure_type: str, length: int) -> None:
+        assert length > 0, "Довжина має бути більшою за 0!"
+        assert figure_type in self.FIGURES, "Невідомий тип фігури"
+        self.type = figure_type
+        self.length = length
+
+    @property
+    def get_figure_type(self) -> str:
+        return self.type
+
+    @property
+    def get_figure_length(self) -> int:
+        return self.length
+
+    # Додав метод визначення кількості кутів
+    def get_angles(self) -> int:
+        if self.type in ["квадрат", "прямокутник"]:
+            return 4
+        elif self.type == "трикутник":
+            return 3
+        return 0
+
+
+# Додав функцію, що використовує введення користувача
+def get_figure_length_from_user() -> int:
+    raw_input = input("Введіть довжину сторони: ")
+    return int(raw_input)

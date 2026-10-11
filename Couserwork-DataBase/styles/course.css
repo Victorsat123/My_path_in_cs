@@ -35,9 +35,7 @@ html { scroll-behavior: smooth; }
     position: relative;
 }
 
-/* =========================================================
-   ГЛОБАЛЬНІ ГРУПИ (ОПТИМІЗАЦІЯ ПОВТОРЕНЬ)
-   ========================================================= */
+/* ГЛОБАЛЬНІ ГРУПИ (ОПТИМІЗАЦІЯ ПОВТОРЕНЬ) */
 
 /* 1. Іконки, аватари та бейджі (Ідеальне центрування) */
 .logo-box, .avatar-placeholder, .task-icon, .title-icon, .xp-icon, .achv-icon, 
@@ -100,9 +98,7 @@ html { scroll-behavior: smooth; }
 }
 
 
-/* =========================================================
-   ІНДИВІДУАЛЬНІ СТИЛІ БЛОКІВ
-   ========================================================= */
+/* ІНДИВІДУАЛЬНІ СТИЛІ БЛОКІВ */
 
 /* --- ШАПКА --- */
 header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 25px; border-bottom: 1px solid var(--border-muted); margin-bottom: 50px; }
@@ -192,9 +188,7 @@ footer { border-top: 1px solid var(--border-muted); padding: 40px 0; display: fl
 .breadcrumb .separator { color: #444; font-size: 12px; }
 .breadcrumb .current { color: var(--text-offwhite); font-weight: 600; }
 
-/* =========================================================
-   СТОРІНКА ACHIEVEMENTS & QUESTS
-   ========================================================= */
+/* СТОРІНКА ACHIEVEMENTS & QUESTS */
 .quests-main { position: relative; margin-left: -60px; margin-right: -60px; padding-left: 110px; padding-right: 60px; padding-top: 30px; padding-bottom: 80px; }
 .quests-container { padding-bottom: 80px; max-width: 1300px; margin: 0 auto; }
 .quests-hero { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 50px; }
@@ -364,9 +358,7 @@ footer { border-top: 1px solid var(--border-muted); padding: 40px 0; display: fl
 .dq-icon-box.filled { background-color: var(--accent-crimson); }
 .dq-bar { height: 4px; border-radius: 2px; }
 
-/* =========================================================
-   СТОРІНКА CHARTS
-   ========================================================= */
+/* СТОРІНКА CHARTS */
 .charts-main { padding: 10px 0 60px 0; }
 .charts-hero { margin-bottom: 30px; }
 .charts-title-area { display: flex; align-items: center; gap: 15px; margin-bottom: 12px; }
@@ -460,9 +452,7 @@ footer { border-top: 1px solid var(--border-muted); padding: 40px 0; display: fl
 .t-row:not(.t-header):hover .play-hover { display: flex; }
 
 
-/* =========================================================
-   СТОРІНКА ДРУЗІВ (FRIENDS PAGE)
-   ========================================================= */
+/* СТОРІНКА ДРУЗІВ (FRIENDS PAGE) */
 body.friends-page { background-image: radial-gradient(circle at 10% 0%, rgba(30, 64, 175, 0.15) 0%, transparent 60%), radial-gradient(circle at 90% 20%, rgba(211, 36, 36, 0.03) 0%, transparent 50%) !important; }
 
 .f-hero { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px; }
@@ -598,9 +588,7 @@ body.friends-page { background-image: radial-gradient(circle at 10% 0%, rgba(30,
 .btn-copy-link { width: 100%; background-color: rgba(30, 58, 138, 0.3); border: 1px solid #60a5fa; color: #60a5fa; padding: 12px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.3s; }
 .btn-copy-link:hover { background-color: rgba(96, 165, 250, 0.2); }
 
-/* =========================================================
-   МОДАЛЬНЕ ВІКНО
-   ========================================================= */
+/* МОДАЛЬНЕ ВІКНО */
 .modal { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.85); backdrop-filter: blur(8px); }
 .modal-content { background: #111111; background-image: radial-gradient(circle at top, rgba(255,255,255,0.03) 0%, transparent 70%); margin: 10% auto; padding: 40px 30px; border: 1px solid #333; width: 90%; max-width: 420px; border-radius: 24px; text-align: center; position: relative; animation: modalScale 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 20px 50px rgba(0,0,0,0.9); }
 @keyframes modalScale { from { transform: scale(0.8) translateY(20px); opacity: 0; } to { transform: scale(1) translateY(0); opacity: 1; } }
@@ -629,9 +617,7 @@ body.friends-page { background-image: radial-gradient(circle at 10% 0%, rgba(30,
 .modal-main-icon.legendary { background: rgba(239,68,68,0.1); box-shadow: 0 0 30px rgba(239,68,68,0.4); }
 
 
-/* =========================================================
-   ОБ'ЄДНАНІ МЕДІА-ЗАПИТИ (АДАПТИВНІСТЬ)
-   ========================================================= */
+/* ОБ'ЄДНАНІ МЕДІА-ЗАПИТИ (АДАПТИВНІСТЬ)*/
 
 /* ПЛАНШЕТИ (Ширина до 1024px) */
 @media (max-width: 1024px) {
